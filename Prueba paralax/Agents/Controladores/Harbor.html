@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/Fotos/descarga.jpeg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harbor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-center bg-cover font-sans relative bg-black">
+    <nav class="bg-black bg-cover p-5 text-center relative z-10">
+      <a
+        href="/About.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >About</a
+      >
+      <a
+        href="/Agents.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Agents</a
+      >
+      <a
+        href="/src/index.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Home</a
+      >
+      <a
+        href="/Contact.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Contact</a
+      >
+      <a
+        href="/News.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >News</a
+      >
+      <a
+        href="/Info.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Info</a
+      >
+    </nav>
+
+    <div class="flex items-center h-screen relative">
+      <!-- Imagen a la izquierda -->
+      <div class="absolute top-0 left-0 w-1/5 h-full bg-black">
+        <img
+          src="../FotosAgentes/Harbor.webp"
+          alt="Imagen Izquierda"
+          class="w-full h-full object-contain"
+        />
+      </div>
+
+      <!-- Fondo con imagen y sombra -->
+      <img
+        src="../FondosPantallaAgentes/Harbor.webp"
+        alt="Fondo de la página"
+        class="absolute top-0 right-0 w-4/5 h-full object-cover"
+      />
+
+      <div
+        class="absolute top-0 right-0 w-4/5 h-full bg-gray-800 bg-opacity-70 p-2 md:p-4 rounded-md text-white text-center"
+      >
+        <!-- Nombre "KILLJOY" arriba -->
+        <div class="mb-2 md:mb-4 mt-8">
+          <h1 class="md:text-8xl font-bold text-blue-300">HARBOR</h1>
+        </div>
+
+        <div class="mb-2 md:mb-8 mt-16">
+          <p>
+            Desde las costas de la India, Harbor llega al campo de batalla
+            armado con tecnología ancestral capaz de controlar el agua.<br />Libera
+            espumosos torrentes y demoledoras olas para escudar a sus aliados o
+            machacar a quien se interponga en su camino.
+          </p>
+        </div>
+
+        <!-- Cuatro tarjetas con información y video en 2 columnas verticales -->
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mt-24">
+          <!-- Tarjeta 1 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold">Q - CALA</span>
+              <br />
+              EQUIPA una esfera de agua protectora. DISPARA para lanzarla.
+              ALTERNA EL MODO DE DISPARO para lanzarla por debajo del hombro. Al
+              impactar contra el suelo, genera un escudo de agua destructible
+              que bloquea las balas.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Harbor_Q_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold">E - MAREA ALTA</span>
+              <br />
+              EQUIPA una pared de agua. DISPARA para lanzarla hacia adelante por
+              el suelo. MANTÉN PULSADO para guiar el agua en la dirección de la
+              mira, atravesando los obstáculos del terreno y creando una pared
+              por todo el recorrido. ALTERNA EL MODO DE DISPARO mientras trazas
+              la pared para acabarla antes de tiempo. Los jugadores golpeados se
+              ven ralentizados.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Harbor_E_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold">C - CASCADA</span>
+              <br />
+              EQUIPA una ola de agua. DISPARA para enviarla hacia delante y
+              hacer que atraviese las paredes. ÚSALA DE NUEVO para detener la
+              ola. Los jugadores golpeados se ven ralentizados.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Harbor_C_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 4 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold">X - AJUSTE DE CUENTAS</span>
+              <br />
+              EQUIPA todo el poder de tu artefacto. DISPARA para invocar un
+              géiser que nace del suelo. Los enemigos de la zona serán objetivo
+              de varios ataques del géiser. Los jugadores que se vean atrapados
+              por un impacto quedan aturdidos.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Harbor_X_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/Fotos/descarga.jpeg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breach</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-center bg-cover font-sans relative bg-black">
+    <nav class="bg-black bg-cover p-5 text-center relative z-10">
+      <a
+        href="/About.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >About</a
+      >
+      <a
+        href="/Agents.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Agents</a
+      >
+      <a
+        href="/src/index.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Home</a
+      >
+      <a
+        href="/Contact.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Contact</a
+      >
+      <a
+        href="/News.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >News</a
+      >
+      <a
+        href="/Info.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Info</a
+      >
+      <a
+        href="/result.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Result</a
+      >
+    </nav>
+
+    <div class="flex items-center h-screen relative">
+      <!-- Imagen a la izquierda -->
+      <div class="absolute top-0 left-0 w-1/5 h-full bg-black">
+        <img
+          src="../FotosAgentes/Breach.webp"
+          alt="Imagen Izquierda"
+          class="w-full h-full object-contain"
+        />
+      </div>
+
+      <!-- Fondo con imagen y sombra -->
+      <img
+        src="../FondosPantallaAgentes/breach.webp"
+        alt="Fondo de la página"
+        class="absolute top-0 right-0 w-4/5 h-full object-cover"
+      />
+
+      <div
+        class="absolute top-0 right-0 w-4/5 h-full bg-gray-800 bg-opacity-70 p-2 md:p-4 rounded-md text-white text-center"
+      >
+        <!-- Nombre "KILLJOY" arriba -->
+        <div class="mb-2 md:mb-4 mt-8">
+          <h1 class="md:text-8xl font-bold text-yellow-300">BREACH</h1>
+        </div>
+
+        <div class="mb-2 md:mb-8 mt-16">
+          <p>
+            Breach, el sueco biónico, dispara una serie de explosiones cinéticas
+            controladas para abrirse paso por el territorio enemigo.<br />
+            Su capacidad para infligir daño y sembrar el caos garantiza que los
+            combates siempre estén de su parte.
+          </p>
+        </div>
+
+        <!-- Cuatro tarjetas con información y video en 2 columnas verticales -->
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mt-24">
+          <!-- Tarjeta 1 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-yellow-300 font-bold"
+                >Q - EXPLOSIÓN CEGADORA</span
+              >
+              <br />
+              EQUIPA una carga explosiva cegadora. DISPARAD la carga para
+              liberar una rápida explosión que atraviesa la pared. Cuando
+              detona, la carga ciega a todos los jugadores que la estén mirando.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Breach_Q_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-yellow-300 font-bold">E - FALLA</span>
+              <br />
+              EQUIPA una bomba sísmica. MANTENED PULSADO DISPARAR para aumentar
+              la distancia. SOLTAD para liberar un seísmo que aturdirá a todos
+              los jugadores dentro de la zona y en una línea hasta ella.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Breach_E_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-yellow-300 font-bold">C - RÉPLICA</span>
+              <br />
+              EQUIPA una carga explosiva de fusión. DISPARAD la carga para
+              liberar una explosión que atraviesa la pared tras un retardo. La
+              explosión inflige mucho daño a cualquiera que esté dentro del área
+              afectada.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Breach_C_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 4 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-yellow-300 font-bold"
+                >X - FRAGOR IMPARABLE</span
+              >
+              <br />
+              EQUIPA una carga explosiva sísmica. DISPARAD para liberar un
+              seísmo que se extenderá por una gran zona en forma de cono. El
+              seísmo aturde y lanza por los aires a todos los jugadores que
+              estén en el interior de la zona.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Breach_X_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

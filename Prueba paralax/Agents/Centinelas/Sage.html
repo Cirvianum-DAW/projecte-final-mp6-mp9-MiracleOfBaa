@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/Fotos/descarga.jpeg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-center bg-cover font-sans relative bg-black">
+    <nav class="bg-black bg-cover p-5 text-center relative z-10">
+      <a
+        href="/About.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >About</a
+      >
+      <a
+        href="/Agents.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Agents</a
+      >
+      <a
+        href="/src/index.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Home</a
+      >
+      <a
+        href="/Contact.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Contact</a
+      >
+      <a
+        href="/News.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >News</a
+      >
+      <a
+        href="/Info.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Info</a
+      >
+    </nav>
+
+    <div class="flex items-center h-screen relative">
+      <!-- Imagen a la izquierda -->
+      <div class="absolute top-0 left-0 w-1/5 h-full bg-black">
+        <img
+          src="../FotosAgentes/Sage.webp"
+          alt="Imagen Izquierda"
+          class="w-full h-full object-contain"
+        />
+      </div>
+
+      <!-- Fondo con imagen y sombra -->
+      <img
+        src="../FondosPantallaAgentes/sage.jpeg"
+        alt="Fondo de la página"
+        class="absolute top-0 right-0 w-4/5 h-full object-cover"
+      />
+
+      <div
+        class="absolute top-0 right-0 w-4/5 h-full bg-gray-800 bg-opacity-70 p-2 md:p-4 rounded-md text-white text-center"
+      >
+        <!-- Nombre "KILLJOY" arriba -->
+        <div class="mb-2 md:mb-4 mt-8">
+          <h1 class="md:text-8xl font-bold text-blue-300">SAGE</h1>
+        </div>
+
+        <div class="mb-2 md:mb-8 mt-16">
+          <p>
+            Originaria de China, Sage destaca a la hora de crear espacios
+            seguros para su equipo allá donde va.<br />
+            Sus capacidades especiales para revivir a compañeros caídos en
+            batalla y para mantener a raya los asaltos enemigos la convierten en
+            la calma en mitad de la tormenta para su equipo.
+          </p>
+        </div>
+
+        <!-- Cuatro tarjetas con información y video en 2 columnas verticales -->
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mt-24">
+          <!-- Tarjeta 1 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold"
+                >Q - ORBE DE RALENTIZACIÓN</span
+              >
+              <br />
+              EQUIPA un orbe de ralentización. DISPARAD para lanzar hacia
+              adelante un orbe de ralentización que explota al aterrizar, lo que
+              genera un campo persistente que ralentiza a los jugadores que se
+              encuentren en su interior.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Sage_Q_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold">E - ORBE DE SANACIÓN</span>
+              <br />
+              EQUIPA un orbe de sanación. DISPARAD con la mira sobre un aliado
+              herido para curarlo durante un breve periodo. ALTERNAD EL MODO DE
+              DISPARO si Sage ha recibido daño para que se cure a sí misma
+              durante un breve periodo.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Sage_E_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold">C - ORBE BARRERA</span>
+              <br />
+              EQUIPA un orbe barrera. DISPARAD para colocar una pared sólida.
+              Alternad el MODO DE DISPARO para rotarla antes de crearla.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Sage_C_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 4 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold">X - RESURRECCIÓN</span>
+              <br />
+              EQUIPA una habilidad de resurrección. DISPARAD con la mira sobre
+              un aliado muerto para empezar a resucitarlo. Tras un breve periodo
+              de canalización, el aliado resucitará con toda la vida.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Sage_X_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

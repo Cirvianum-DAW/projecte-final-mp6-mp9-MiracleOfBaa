@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/Fotos/descarga.jpeg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phoenix</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-center bg-cover font-sans relative bg-black">
+    <nav class="bg-black bg-cover p-5 text-center relative z-10">
+      <a
+        href="/About.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >About</a
+      >
+      <a
+        href="/Agents.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Agents</a
+      >
+      <a
+        href="/src/index.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Home</a
+      >
+      <a
+        href="/Contact.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Contact</a
+      >
+      <a
+        href="/News.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >News</a
+      >
+      <a
+        href="/Info.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Info</a
+      >
+    </nav>
+
+    <div class="flex items-center h-screen relative">
+      <!-- Imagen a la izquierda -->
+      <div class="absolute top-0 left-0 w-1/5 h-full bg-black">
+        <img
+          src="../FotosAgentes/Phoenix.webp"
+          alt="Imagen Izquierda"
+          class="w-full h-full object-contain"
+        />
+      </div>
+
+      <!-- Fondo con imagen y sombra -->
+      <img
+        src="../FondosPantallaAgentes/phoenix.webp"
+        alt="Fondo de la página"
+        class="absolute top-0 right-0 w-4/5 h-full object-cover"
+      />
+
+      <div
+        class="absolute top-0 right-0 w-4/5 h-full bg-gray-800 bg-opacity-70 p-2 md:p-4 rounded-md text-white text-center"
+      >
+        <!-- Nombre "KILLJOY" arriba -->
+        <div class="mb-2 md:mb-4 mt-8">
+          <h1 class="md:text-8xl font-bold text-orange-300">PHOENIX</h1>
+        </div>
+
+        <div class="mb-2 md:mb-8 mt-16">
+          <p>
+            Phoenix proviene del Reino Unido y sus poderes estelares salen a
+            relucir con su estilo de combate, que prende fuego al campo de
+            batalla de forma deslumbrante.<br />
+            No le hacen falta refuerzos; es él quién se lanza al combate y marca
+            el ritmo.
+          </p>
+        </div>
+
+        <!-- Cuatro tarjetas con información y video en 2 columnas verticales -->
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mt-24">
+          <!-- Tarjeta 1 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-orange-300 font-bold">Q - BOLA CURVA</span>
+              <br />
+              EQUIPA un orbe fulgurante que dibuja una trayectoria curva y
+              explota poco después de haberlo lanzado. DISPARAD para lanzar el
+              orbe fulgurante hacia la izquierda, lo que hará que detone y
+              ciegue a cualquier jugador que lo vea. ALTERNAD EL MODO DE DISPARO
+              para lanzar el orbe fulgurante hacia la derecha.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Phoenix_Q_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-orange-300 font-bold">E - COMBUSTIÓN</span>
+              <br />
+              EQUIPA una bola de fuego. DISPARAD para lanzar una bola de fuego
+              que explota transcurrido un tiempo determinado o al impactar
+              contra el suelo, lo que crea una zona de fuego persistente que
+              inflige daño a los enemigos.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Phoenix_E_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-orange-300 font-bold">C - LLAMARADA</span>
+              <br />
+              EQUIPA una pared de llamas. DISPARAD para crear una línea de
+              llamas que avanza hacia adelante, lo que forma una pared de fuego
+              que bloquea la visión e inflige daño a los jugadores enemigos que
+              la atraviesen. MANTENED PULSADO DISPARAR para curvar la pared en
+              la dirección de la mira.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Phoenix_C_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 4 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-orange-300 font-bold">X - CENIZAS</span>
+              <br />
+              Coloca INSTANTANEAMENTE un marcador en la ubicación de Phoenix.
+              Mientras esta habilidad esté activa, morir o dejar que se agote el
+              temporizador hará que se termine la habilidad y devolverá a
+              Phoenix a esta ubicación con toda la vida.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Phoenix_X_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

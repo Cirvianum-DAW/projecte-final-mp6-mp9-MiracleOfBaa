@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/Fotos/descarga.jpeg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sova</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-center bg-cover font-sans relative bg-black">
+    <nav class="bg-black bg-cover p-5 text-center relative z-10">
+      <a
+        href="/About.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >About</a
+      >
+      <a
+        href="/Agents.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Agents</a
+      >
+      <a
+        href="/src/index.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Home</a
+      >
+      <a
+        href="/Contact.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Contact</a
+      >
+      <a
+        href="/News.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >News</a
+      >
+      <a
+        href="/Info.html"
+        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
+        >Info</a
+      >
+    </nav>
+
+    <div class="flex items-center h-screen relative">
+      <!-- Imagen a la izquierda -->
+      <div class="absolute top-0 left-0 w-1/5 h-full bg-black">
+        <img
+          src="../FotosAgentes/Sova.webp"
+          alt="Imagen Izquierda"
+          class="w-full h-full object-contain"
+        />
+      </div>
+
+      <!-- Fondo con imagen y sombra -->
+      <img
+        src="../FondosPantallaAgentes/sova.webp"
+        alt="Fondo de la página"
+        class="absolute top-0 right-0 w-4/5 h-full object-cover"
+      />
+
+      <div
+        class="absolute top-0 right-0 w-4/5 h-full bg-gray-800 bg-opacity-70 p-2 md:p-4 rounded-md text-white text-center"
+      >
+        <!-- Nombre "KILLJOY" arriba -->
+        <div class="mb-2 md:mb-4 mt-8">
+          <h1 class="md:text-8xl font-bold text-blue-300">SOVA</h1>
+        </div>
+
+        <div class="mb-2 md:mb-8 mt-16">
+          <p>
+            Nacido en el eterno invierno de la tundra rusa, Sova destaca a la
+            hora de localizar, perseguir y eliminar a los enemigos con una
+            eficiencia y una precisión inclementes.<br />
+            Su arco personalizado junto con su sobrenatural capacidad de
+            rastreamiento hacen que sea imposible escapar.
+          </p>
+        </div>
+
+        <!-- Cuatro tarjetas con información y video en 2 columnas verticales -->
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mt-24">
+          <!-- Tarjeta 1 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold">Q - FLECHA EXPLOSIVA</span>
+              <br />
+              EQUIPA un arco con una flecha explosiva. DISPARA para lanzar la
+              flecha explosiva hacia delante. Explotará cuando impacte e
+              infligirá daño a los enemigos cercanos. MANTÉN PULSADO para
+              ampliar su alcance. ALTERNA EL MODO DE DISPARO para añadir hasta
+              dos rebotes a la flecha.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Sova_Q_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold"
+                >E - PROYECTIL DE RECONOCIMIENTO</span
+              >
+              <br />
+              EQUIPA un arco con un proyectil de reconocimiento. Se activará
+              cuando impacte y revelará la posición de los enemigos que se
+              encuentren en la línea de visión del proyectil. El proyectil puede
+              ser destruido. MANTÉN PULSADO para ampliar su alcance. ALTERNA EL
+              MODO DE DISPARO para añadir hasta dos rebotes a la flecha.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Sova_E_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold"
+                >C - DRON DE RECONOCIMIENTO</span
+              >
+              <br />
+              EQUIPA un dron de reconocimiento. DISPARA para desplegar el dron y
+              controlar su movimiento. Cuando tengas el control del dron,
+              DISPARA para lanzar un dardo marcador que revelará la ubicación de
+              cualquier jugador alcanzado. Los enemigos pueden destruir el Dron
+              de reconocimiento.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Sova_C_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+
+          <!-- Tarjeta 4 -->
+          <div
+            class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
+          >
+            <p class="text-sm md:text-lg">
+              <span class="text-blue-300 font-bold">X - FURIA DEL CAZADOR</span>
+              <br />
+              EQUIPA un arco con tres proyectiles de energía de largo alcance
+              que atraviesan paredes. DISPARAD para lanzar un proyectil de
+              energía en línea recta frente a Sova que infligirá daño y revelará
+              la posición de los enemigos que se encuentren a su paso. Esta
+              habilidad puede VOLVERSE A USAR hasta dos veces más mientras el
+              temporizador de la habilidad esté activo.
+            </p>
+            <iframe
+              class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
+              src="../FotosHabilidades/Sova_X_v001_web.mp4"
+              frameborder="0"
+              allowfullscreen
+              autoplay
+              loop
+              muted
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
