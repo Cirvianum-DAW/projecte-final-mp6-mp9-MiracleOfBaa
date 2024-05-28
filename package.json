@@ -39,11 +39,16 @@
   },
   "dependencies": {
     "axios": "^1.7.1",
+    "express": "^4.19.2",
     "flowbite": "^2.3.0"
   },
+<<<<<<< HEAD
 
   "staticFiles": {
     "staticPath": "customStatic"
   }
 
+=======
+  "license": "ISC"
+>>>>>>> 3300d7852587f559382eabe0dfb73993bafb5182
 }
