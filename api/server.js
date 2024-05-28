@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 
 const authRoutes = require('./routes/auth.routes.js')
 
@@ -9,6 +10,8 @@ app.set('port', port)
 
 // Middleware para parsear el cuerpo de las solicitudes como JSON
 app.use(express.json())
+
+app.use(cors())
 
 // Rutas
 app.use('/auth', authRoutes)

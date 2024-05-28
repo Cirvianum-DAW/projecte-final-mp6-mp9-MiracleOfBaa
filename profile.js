@@ -1,47 +1,58 @@
-// script.js
-
-// Datos simulados de usuario y personajes favoritos
-const userData = {
+// Datos simulados de usuario y agentes
+const usersData = {
   username: "Usuario123",
   email: "usuario123@example.com"
 };
 
-const favoriteCharacters = ["Sova", "Jett", "Breach"];
+let agentsData = ["Sova", "Jett", "Breach"];
 
 // Función para mostrar la información del usuario
 function showUserInfo() {
-  const userInfoDiv = document.getElementById("userInfo");
-  userInfoDiv.innerHTML = `
-      <p><strong>Nombre de usuario:</strong> ${userData.username}</p>
-      <p><strong>Correo electrónico:</strong> ${userData.email}</p>
-  `;
+  document.getElementById("username").value = usersData.username;
+  document.getElementById("email").value = usersData.email;
 }
 
-// Función para mostrar los personajes favoritos
-function showFavoriteCharacters() {
-  const favoriteCharactersDiv = document.getElementById("favoriteCharacters");
-  favoriteCharactersDiv.innerHTML = `<ul>`;
-  favoriteCharacters.forEach(character => {
-      favoriteCharactersDiv.innerHTML += `<li>${character}</li>`;
+// Función para mostrar los agentes favoritos
+function showFavoriteAgents() {
+  const favoriteAgentsList = document.getElementById("favoriteAgents");
+  favoriteAgentsList.innerHTML = "";
+  agentsData.forEach(agent => {
+      const li = document.createElement("li");
+      li.textContent = agent;
+      favoriteAgentsList.appendChild(li);
   });
-  favoriteCharactersDiv.innerHTML += `</ul>`;
 }
 
-// Función para manejar la creación de un nuevo personaje
-function createCharacter(event) {
+// Función para manejar la edición de perfil
+function editProfile(event) {
   event.preventDefault();
-  const characterName = document.getElementById("characterName").value;
-  favoriteCharacters.push(characterName);
-  showFavoriteCharacters();
-  // Aquí podrías enviar los datos del nuevo personaje al servidor si fuera necesario
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  // Aquí podrías enviar los datos actualizados al servidor si fuera necesario
+  alert(`Perfil actualizado:\nNombre de Usuario: ${username}\nCorreo Electrónico: ${email}`);
 }
 
-// Mostrar información del usuario y personajes favoritos al cargar la página
+// Función para añadir un nuevo agente
+function addAgent(event) {
+  event.preventDefault();
+  const agentName = document.getElementById("agentName").value;
+  
+  // Aquí podrías enviar los datos del nuevo agente al servidor si fuera necesario
+  agentsData.push(agentName);
+  showFavoriteAgents();
+  document.getElementById("addAgentForm").reset(); // Limpiar el formulario después de añadir un agente
+}
+
+// Mostrar información del usuario y agentes favoritos al cargar la página
 window.onload = function() {
   showUserInfo();
-  showFavoriteCharacters();
+  showFavoriteAgents();
 
-  // Manejar la creación de un nuevo personaje cuando se envíe el formulario
-  const createCharacterForm = document.getElementById("createCharacterForm");
-  createCharacterForm.addEventListener("submit", createCharacter);
+  // Manejar la edición de perfil cuando se envíe el formulario
+  const editProfileForm = document.getElementById("editProfileForm");
+  editProfileForm.addEventListener("submit", editProfile);
+
+  // Manejar la adición de un nuevo agente cuando se envíe el formulario
+  const addAgentForm = document.getElementById("addAgentForm");
+  addAgentForm.addEventListener("submit", addAgent);
 };

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "173e8afd-29db-4893-becb-ca2dd1a4ad33",
+    "role": "user",
+    "username": "eeee",
+    "password": "eeee"
+  },
+  {
+    "id": "4f35ef14-fd5a-4ab9-8da0-fea4dc2be2e0",
+    "role": "admin",
+    "username": "admin",
+    "password": "admin"
+  },
+  {
+    "id": "b5a9d2a4-ad2f-4431-9b5f-0f142cf4e969",
+    "role": "user",
+    "username": "1111",
+    "password": "1111"
+  }
+]
