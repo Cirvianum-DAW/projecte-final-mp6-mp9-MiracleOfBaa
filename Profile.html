@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil de Usuario - VALORANT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/Fotos/descarga.jpeg" type="image/x-icon" />
+    <style>
+      /* Estilos adicionales */
+      body {
+        background-color: #1f2937;
+      }
+
+      .profile-container {
+        background-color: #2c3e50;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 400px;
+        margin: auto;
+        margin-top: 50px;
+      }
+
+      .profile-container h2 {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-info img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      .profile-info p {
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+
+      .profile-info a {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #3498db;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .profile-info a:hover {
+        background-color: #2980b9;
+      }
+
+      .favorite-characters {
+        color: #ffffff;
+        margin-top: 20px;
+      }
+
+      .favorite-characters ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .favorite-characters li {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-container">
+      <h2>Perfil de Usuario</h2>
+      <div class="profile-info">
+        <img src="avatar.png" alt="Avatar del usuario" />
+        <p><strong>Nombre de usuario:</strong> <span id="username"></span></p>
+        <p><strong>Correo electrónico:</strong> <span id="email"></span></p>
+      </div>
+      <div class="favorite-characters">
+        <h3>Personajes Favoritos</h3>
+        <ul id="favoriteCharacters">
+          <!-- Los personajes favoritos se llenarán aquí -->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

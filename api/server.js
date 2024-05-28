@@ -1,41 +1,21 @@
-const express = require('express');
-const fs = require('fs');
+const express = require('express')
 
-const app = express();
-const port = 3000;
+const authRoutes = require('./routes/auth.routes.js')
 
-const usersFilePath = './users.json';
+const app = express()
+const port = 3000
+
+app.set('port', port)
 
 // Middleware para parsear el cuerpo de las solicitudes como JSON
-app.use(express.json());
+app.use(express.json())
 
-// Función para leer usuarios desde el archivo JSON
-function getUsers() {
-  try {
-    const usersData = fs.readFileSync(usersFilePath);
-    return JSON.parse(usersData);
-  } catch (error) {
-    return [];
-  }
-}
+// Rutas
+app.use('/auth', authRoutes)
 
-// Función para guardar usuarios en el archivo JSON
-// users.js
-function saveUsers(users) {
-  const usersJSON = JSON.stringify(users, null, 2);
-  fs.writeFileSync(usersFilePath, usersJSON);
-}
+app.use((error, _req, res, _next) => {
+  console.log(_next)
+  res.status(500).send(error.message)
+})
 
-
-// Ruta para obtener todos los usuarios
-app.get('/api/users', (req, res) => {
-  const users = getUsers();
-  res.json(users);
-});
-
-// Iniciar el servidor
-app.listen(port, () => {
-  console.log(`Servidor en funcionamiento en http://localhost:${port}`);
-});
-
-module.exports = { saveUsers };
+module.exports = app
