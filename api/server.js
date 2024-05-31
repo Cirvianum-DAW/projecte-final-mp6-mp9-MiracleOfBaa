@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 
 const authRoutes = require('./routes/auth.routes.js')
+const agentsRoutes = require('./routes/agents.routes.js')
 
 const app = express()
 const port = 3000
@@ -15,6 +16,7 @@ app.use(cors())
 
 // Rutas
 app.use('/auth', authRoutes)
+app.use('/agents', agentsRoutes)
 
 app.use((error, _req, res, _next) => {
   console.log(_next)

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/Fotos/descarga.jpeg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chamber</title>
+    <title>?</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -15,7 +15,7 @@
       <!-- Imagen a la izquierda -->
       <div class="absolute top-0 left-0 w-1/5 h-full bg-black">
         <img
-          src="../FotosAgentes/Chamber.webp"
+          id="imagen"
           alt="Imagen Izquierda"
           class="w-full h-full object-contain"
         />
@@ -23,7 +23,7 @@
 
       <!-- Fondo con imagen y sombra -->
       <img
-        src="../FondosPantallaAgentes/CHAMBER.webp"
+        id="wallpaper"
         alt="Fondo de la página"
         class="absolute top-0 right-0 w-4/5 h-full object-cover"
       />
@@ -31,18 +31,12 @@
       <div
         class="absolute top-0 right-0 w-4/5 h-full bg-gray-800 bg-opacity-70 p-2 md:p-4 rounded-md text-white text-center"
       >
-        <!-- Nombre "KILLJOY" arriba -->
         <div class="mb-2 md:mb-4 mt-8">
-          <h1 class="md:text-8xl font-bold text-yellow-300">CHAMBER</h1>
+          <h1 id="nombre" class="md:text-8xl font-bold text-yellow-300"></h1>
         </div>
 
         <div class="mb-2 md:mb-8 mt-16">
-          <p>
-            El diseñador de armas francés, siempre bien vestido y bien
-            pertrechado, expulsa a los agresores con precisión letal.<br />
-            Chamber aprovecha su arsenal personalizado para resistir, elimina
-            enemigos a distancia y crea la contingencia perfecta para cada plan.
-          </p>
+          <p id="descripcion"></p>
         </div>
 
         <!-- Cuatro tarjetas con información y video en 2 columnas verticales -->
@@ -51,17 +45,13 @@
           <div
             class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
           >
-            <p class="text-sm md:text-lg">
-              <span class="text-yellow-300 font-bold"
-                >Q - CAZADOR DE CABEZAS</span
-              >
+            <p id="qBody" class="text-sm md:text-lg">
+              <span id="qHeader" class="text-yellow-300 font-bold"></span>
               <br />
-              ACTÍVALA para equipar una pistola pesada. Utiliza el botón de modo
-              de DISPARO ALTERNATIVO para apuntar con la mira.
             </p>
             <iframe
+              id="qVideo"
               class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
-              src="../FotosHabilidades/VAL_broll_EP03-3_Chamber_Q.mp4"
               frameborder="0"
               allowfullscreen
               autoplay
@@ -74,17 +64,13 @@
           <div
             class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
           >
-            <p class="text-sm md:text-lg">
-              <span class="text-yellow-300 font-bold">E - RENDEZ-VOUS</span>
+            <p id="eBody" class="text-sm md:text-lg">
+              <span id="eHeader" class="text-yellow-300 font-bold"></span>
               <br />
-              EQUIPA un anclaje de teleportación. DISPARA para colocarla en el
-              suelo. Mientras esté en el suelo y al alcance, REACTIVA la
-              habilidad para teleportarte rápidamente al anclaje. El anclaje se
-              puede recoger para VOLVER A COLOCARLO.
             </p>
             <iframe
+              id="eVideo"
               class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
-              src="../FotosHabilidades/Chamber_E_rework_web.mp4"
               frameborder="0"
               allowfullscreen
               autoplay
@@ -97,21 +83,13 @@
           <div
             class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
           >
-            <p class="text-sm md:text-lg">
-              <span class="text-yellow-300 font-bold"
-                >C - MARCA REGISTRADA</span
-              >
+            <p id="cBody" class="text-sm md:text-lg">
+              <span id="cHeader" class="text-yellow-300 font-bold"></span>
               <br />
-              EQUIPA una trampa que escanea en busca de enemigos. DISPARA para
-              colocarla en el suelo. Cuando un enemigo visible entra en el
-              alcance, la trampa inicia una cuenta atrás y, a continuación,
-              desestabiliza el terreno a su alrededor, lo que crea un campo
-              persistente que ralentiza a los jugadores que se encuentren en su
-              interior. El anclaje se puede recoger para VOLVER A COLOCARLO.
             </p>
             <iframe
+              id="cVideo"
               class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
-              src="../FotosHabilidades/Chamber_C_rework_web.mp4"
               frameborder="0"
               allowfullscreen
               autoplay
@@ -124,19 +102,15 @@
           <div
             class="bg-black bg-opacity-75 aspect-w-16 gap-4 p-2 aspect-h-9 flex flex-col md:flex-row rounded-md items-center justify-center text-center"
           >
-            <p class="text-sm md:text-lg">
-              <span class="text-yellow-300 font-bold">X - TOUR DE FORCE</span>
+            <p id="xBody" class="text-sm md:text-lg">
+              <span id="xHeader" class="text-yellow-300 font-bold"
+                ></span
+              >
               <br />
-              ACTÍVALA para invocar un poderoso rifle de francotirador
-              personalizado que mata a los enemigos con cualquier impacto
-              directo en la parte superior del cuerpo. ALTERNA EL MODO DE
-              DISPARO para apuntar con la mira. Matar a un enemigo genera un
-              campo persistente que ralentiza a los jugadores que se encuentren
-              en su interior.
             </p>
             <iframe
+              id="xVideo"
               class="md:w-[75%] md:h-[75%] w-full h-full rounded-md"
-              src="../FotosHabilidades/Chamber_X_rework_web.mp4"
               frameborder="0"
               allowfullscreen
               autoplay
@@ -148,5 +122,6 @@
       </div>
     </div>
     <script src="src/components/Navbar.js"></script>
+    <script src="src/pages/AgentPage.js"></script>
   </body>
 </html>

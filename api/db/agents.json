@@ -1,0 +1,647 @@
+[
+  {
+    "id": "6a9ef7e8-4595-43de-991f-dc7fe909d728",
+    "type": "centinela",
+    "name": "Chamber",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Chamber.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/CHAMBER.webp",
+    "description": "El diseñador de armas francés, siempre bien vestido y bien\npertrechado, expulsa a los agresores con precisión letal.<br />\nChamber aprovecha su arsenal personalizado para resistir, elimina\nenemigos a distancia y crea la contingencia perfecta para cada plan.",
+    "q": {
+      "header": "Q - CAZADOR DE CABEZAS",
+      "body": "ACTÍVALA para equipar una pistola pesada. Utiliza el botón de modo\nde DISPARO ALTERNATIVO para apuntar con la mira.",
+      "video": "/Prueba paralax/Agents/FotosHabilidades/VAL_broll_EP03-3_Chamber_Q.mp4"
+    },
+    "e": {
+      "header": "E - RENDEZ-VOUS",
+      "body": "EQUIPA un anclaje de teleportación. DISPARA para colocarla en el\nsuelo. Mientras esté en el suelo y al alcance, REACTIVA la\nhabilidad para teleportarte rápidamente al anclaje. El anclaje se\npuede recoger para VOLVER A COLOCARLO.",
+      "video": "/Prueba paralax/Agents/FotosHabilidades/Chamber_E_rework_web.mp4"
+    },
+    "c": {
+      "header": "C - MARCA REGISTRADA",
+      "body": "EQUIPA una trampa que escanea en busca de enemigos. DISPARA para\ncolocarla en el suelo. Cuando un enemigo visible entra en el\nalcance, la trampa inicia una cuenta atrás y, a continuación,\ndesestabiliza el terreno a su alrededor, lo que crea un campo\npersistente que ralentiza a los jugadores que se encuentren en su\ninterior. El anclaje se puede recoger para VOLVER A COLOCARLO.",
+      "video": "/Prueba paralax/Agents/FotosHabilidades/Chamber_C_rework_web.mp4"
+    },
+    "x": {
+      "header": "X - TOUR DE FORCE",
+      "body": "ACTÍVALA para invocar un poderoso rifle de francotirador\npersonalizado que mata a los enemigos con cualquier impacto\ndirecto en la parte superior del cuerpo. ALTERNA EL MODO DE\nDISPARO para apuntar con la mira. Matar a un enemigo genera un\ncampo persistente que ralentiza a los jugadores que se encuentren\nen su interior.",
+      "video": "/Prueba paralax/Agents/FotosHabilidades/Chamber_X_rework_web.mp4"
+    }
+  },
+  {
+    "id": "2f1a5c69-7b3e-4d7f-9a8f-6d2d69df82f4",
+    "type": "centinela",
+    "name": "Chyper",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Chyper.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/Chyper.webp",
+    "description": "Cypher, el maestro de la información, es un centinela que\nmantiene el control de la zona con trampas y espionaje.\nCuando algo se escapa a su vigilancia, Cypher se encarga de ello.",
+
+      "q": {
+        "header": "Q - PRISIÓN CIBERNÉTICA",
+        "body": "Lanza INSTANTÁNEAMENTE una prisión cibernética frente a Cypher. ACTIVADLA para crear una zona que bloquea la visión de los enemigos que la atraviesan.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Cypher_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - CÁMARA ESPÍA",
+        "body": "EQUIPA una cámara espía, DISPARA para colocar la cámara espía en la ubicación objetivo. VUELVE A USAR esta habilidad para controlar la visión de la cámara. Cuando tengas control de la cámara, DISPARA para lanzar un dardo marcador que revelará la ubicación de cualquier jugador alcanzado. El anclaje se puede recoger para VOLVER A COLOCARLO.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Cypher_E_v001_web.mp4"
+      },
+      "c": {
+        "header": "C - CABLE TRAMPA",
+        "body": "EQUIPA un cable trampa. DISPARAD para colocar un cable trampa destructible pero oculto en la ubicación objetivo. Creará una línea que se extiende entre la ubicación en la que se ha colocado y la pared opuesta. Los jugadores enemigos que atraviesen un cable trampa quedarán anclados, revelados y aturdidos tras un breve lapso si no logran destruir el dispositivo a tiempo. El cable trampa se puede recoger para VOLVER A COLOCARLO.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Cypher_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - HURTO NEURONAL",
+        "body": "Usadla INSTANTANEAMENTE sobre un enemigo muerto en vuestra mira para revelar la posición de todos los jugadores enemigos vivos.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Cypher_X_v001_web.mp4"
+      }
+    },
+  {
+    "id": "f8b9df69-c3ea-4e8f-a6f5-83cfcf2d1bfa",
+    "type": "centinela",
+    "name": "Deadlook",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Deadlook.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/deadlock.webp",
+    "description": "Deadlock, la experta en tecnología, es una centinela que\ncontrola el campo de batalla con trampas y dispositivos de\nvigilancia. Su habilidad para detectar y neutralizar a los\nenemigos la convierte en una fuerza a tener en cuenta.",
+      "q": {
+        "header": "Q - SENSOR SÓNICO",
+        "body": "EQUIPA un Sensor sónico. DISPARA para desplegarlo. El sensor rastrea la zona en busca de enemigos que hagan ruido. Si detecta sonidos de pisadas, disparos o cualquier otro ruido considerable, aturde en área.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/AgentPage_Deadlock_Ability_Q.mp4"
+      },
+      "e": {
+        "header": "E - MALLA BARRERA",
+        "body": "EQUIPA un disco de Malla barrera. DISPARA para lanzarlo hacia delante. Al aterrizar, el disco genera barreras a partir de su punto de origen que detienen el movimiento de los personajes.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/AgentPage_Deadlock_Ability_E.mp4"
+      },
+      "c": {
+        "header": "C - RED DE GRAVEDAD",
+        "body": "EQUIPA una granada de Red de gravedad. DISPARA para lanzarla. ALTERNA EL MODO DE DISPARO para lanzarla por debajo del hombro. La Red de gravedad explota al aterrizar, lo que fuerza a los enemigos alcanzados a agacharse y moverse lentamente.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/AgentPage_Deadlock_Ability_C.mp4"
+      },
+      "x": {
+        "header": "X - ANIQUILACIÓN",
+        "body": "EQUIPA un acelerador de nanocables. DISPARA para emitir un pulso de nanocables que capturan al primer enemigo con el que entran en contacto. El enemigo atrapado se ve arrastrado y muere si llega al final del recorrido, a menos que sea liberado. La envoltura de los nanocables se puede destruir.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/AgentPage_Deadlock_Ability_X_2.mp4"
+      }
+    },
+  {
+    "id": "be2c3b6d-8a5d-4bbd-a9ff-1c4a0ff4cdb6",
+    "type": "centinela",
+    "name": "Killjoy",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Killjoy_-_Full_body.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/killjoywallpaper.webp",
+    "description": "Killjoy, la genio alemana, es una centinela que controla el\ncampo de batalla con trampas y dispositivos de vigilancia.\nSu habilidad para detectar y neutralizar a los enemigos la\nconvierte en una fuerza a tener en cuenta.",
+      "q": {
+        "header": "Q - BOT DE ALARMA",
+        "body": "EQUIPA un bot de alarma camuflado. DISPARA para desplegar un bot que dará caza a los enemigos que estén dentro del alcance. Tras alcanzar su objetivo, el bot explota y aplica vulnerabilidad. MANTÉN PULSADO EQUIPAR para recoger un bot desplegado.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/AlarmBot_LowQuality.mp4"
+      },
+      "e": {
+        "header": "E - TORRETA",
+        "body": "EQUIPA una torreta. DISPARA para desplegar una torreta que dispara a los enemigos en un cono de 180 grados. MANTÉN PULSADO EQUIPAR para recoger la torreta desplegada.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Turret_LowQuality.mp4"
+      },
+      "c": {
+        "header": "C - NANOENJAMBRE",
+        "body": "EQUIPA una granada de nanoenjambre. DISPARA para lanzar la granada. Cuando aterriza, la granada enjambre se camufla. ACTIVA el nanoenjambre para desplegar un enjambre de nanobots.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Grenade_LowQuality.mp4"
+      },
+      "x": {
+        "header": "X - BLOQUEO",
+        "body": "EQUIPA el dispositivo de bloqueo. DISPARA para desplegar el dispositivo. Tras un largo periodo de carga, el dispositivo detiene a todos los enemigos que estén dentro del radio de efecto. Los enemigos pueden destruir el dispositivo.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Ultimate_LowQualityV02.mp4"
+      }
+    },
+  {
+    "id": "ec8a8e1e-6c88-45e4-80c1-4b1893d3c8a4",
+    "type": "centinela",
+    "name": "Sage",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Sage.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/sage.webp",
+    "description": "Sage, la médica china, es una centinela que cura a sus\ncompañeros y crea zonas de control en el campo de batalla.\nGracias a su habilidad para restaurar la salud de sus\ncompañeros, Sage es una pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - ORBE DE RALENTIZACIÓN",
+        "body": "EQUIPA un orbe de ralentización. DISPARAD para lanzar hacia adelante un orbe de ralentización que explota al aterrizar, lo que genera un campo persistente que ralentiza a los jugadores que se encuentren en su interior.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Sage_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - ORBE DE SANACIÓN",
+        "body": "EQUIPA un orbe de sanación. DISPARAD con la mira sobre un aliado herido para curarlo durante un breve periodo. ALTERNAD EL MODO DE DISPARO si Sage ha recibido daño para que se cure a sí misma durante un breve periodo.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Sage_E_v001_web.mp4"
+      },
+      "c": {
+        "header": "C - ORBE BARRERA",
+        "body": "EQUIPA un orbe barrera. DISPARAD para colocar una pared sólida. Alternad el MODO DE DISPARO para rotarla antes de crearla.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Sage_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - RESURRECCIÓN",
+        "body": "EQUIPA una habilidad de resurrección. DISPARAD con la mira sobre un aliado muerto para empezar a resucitarlo. Tras un breve periodo de canalización, el aliado resucitará con toda la vida.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Sage_X_v001_web.mp4"
+      }
+    },
+  {
+    "id": "3a9cb35e-1d5e-44b6-8ec9-c2fd8eb52c0d",
+    "type": "controlador",
+    "name": "Astra",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Astra.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/Astra.webp",
+    "description": "Astra, la controladora ghanesa, manipula la energía cósmica para\ncontrolar el campo de batalla. Con la capacidad de ver el\nmapa entero, Astra puede colocar estrellas en cualquier lugar\ny, con un simple pensamiento, activarlas para crear poderosos\nefectos.",
+      "q": {
+        "header": "Q - PULSO NOVA",
+        "body": "Coloca estrellas en Forma astral (X). ACTIVA una estrella para detonar un Pulso nova. El Pulso nova se carga brevemente y explota, lo que aturde a todos los jugadores en la zona.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/RIFT21_Astra_Ability_Q.mp4"
+      },
+      "e": {
+        "header": "E - NEBULOSA",
+        "body": "Coloca estrellas en Forma astral (tecla de la definitiva). ACTIVA una estrella para transformarla en una Nebulosa (humo). USA una estrella para disiparla, lo que recupera la estrella para poder volver a colocarla tras un tiempo. Disipar una estrella crea una breve Nebulosa falsa en su ubicación antes de recuperarla.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/RIFT21_Astra_Ability_E_F.mp4"
+      },
+      "c": {
+        "header": "C - POZO GRAVITATORIO",
+        "body": "Coloca estrellas en Forma astral (X). ACTIVA una estrella para crear un Pozo gravitatorio. Atrae hacia el centro a todos los jugadores en la zona antes de que explote, lo que causa que todos los jugadores atrapados en el interior se vuelvan frágiles.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/RIFT21_Astra_Ability_C.mp4"
+      },
+      "x": {
+        "header": "X - FORMA ASTRAL / SEPARACIÓN CÓSMICA",
+        "body": "ACTIVA para entrar en Forma astral y poder colocar estrellas con el DISPARO. Las estrellas se pueden reactivar más tarde para transformarlas en un Pulso nova, una Nebulosa o un Pozo gravitatorio. Cuando Separación cósmica está cargada, usa el DISPARO ALTERNATIVO en Forma astral para empezar a apuntar y, a continuación, el DISPARO para elegir dos ubicaciones. Se creará una Separación cósmica infinita que conecte los dos puntos. Separación cósmica bloquea las balas y atenúa en gran medida los sonidos.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/RIFT21_Astra_Ability_ULT.mp4"
+      }
+    },
+  {
+    "id": "d6c74f35-519b-4698-9b1d-4ae412d045d2",
+    "type": "controlador",
+    "name": "Brimstone",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Brimstone.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/brimstone_wallpaper_l_valorant_wallpaper_by_kok12383_ddzdjk8-fullview.webp",
+    "description": "Brimstone, el líder de la fuerza de ataque, es un controlador\nque se especializa en la creación de zonas de control y en\nla movilización de su equipo. Con su arsenal de granadas y\nmapas tácticos, Brimstone asegura que su escuadrón siempre\nesté listo para el combate.",
+      "q": {
+        "header": "Q - INCENDIARIO",
+        "body": "EQUIPA un lanzagranadas incendiarias. DISPARAD una granada que detona cuando se detiene en el suelo, lo que genera una zona de fuego persistente que daña a los jugadores que estén en su interior.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Brimstone_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - CORTINA DE HUMO",
+        "body": "EQUIPA un mapa táctico. DISPARA para fijar ubicaciones en las que aparecerán nubes de humo de Brimstone. ALTERNA EL MODO DE DISPARO para confirmar. Esto liberará nubes de humo de larga duración que bloquearán la visión en la zona seleccionada.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Brimstone_E_v001_web.mp4"
+      },
+      "c": {
+        "header": "C - BALIZA ESTIMULANTE",
+        "body": "EQUIPA una baliza estimulante. DISPARAD para lanzar la baliza estimulante frente a Brimstone. Al aterrizar, la baliza estimulante creará un campo que otorgará Disparo rápido a los jugadores.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Brimstone_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - GOLPE ORBITAL",
+        "body": "EQUIPA un mapa táctico. DISPARAD para lanzar un golpe orbital en la ubicación objetivo con un láser persistente, que provocará un gran daño prolongado a los jugadores que se encuentren en la zona seleccionada.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Brimstone_X_v001_web.mp4"
+      }
+    },
+  {
+    "id": "d3f59f35-4f65-4b9c-b94c-3b1dc0efb58a",
+    "type": "controlador",
+    "name": "Harbor",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Harbor.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/Harbor.webp",
+    "description": "Harbor, la artista del agua, es una controladora que\nmanipula el agua para controlar el campo de batalla. Con la\nhabilidad de crear escudos y ralentizar a los enemigos, Harbor\nes una pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - CALA",
+        "body": "EQUIPA una esfera de agua protectora. DISPARA para lanzarla. ALTERNA EL MODO DE DISPARO para lanzarla por debajo del hombro. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea las balas.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Harbor_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - MAREA ALTA",
+        "body": "EQUIPA una pared de agua. DISPARA para lanzarla hacia adelante por el suelo. MANTÉN PULSADO para guiar el agua en la dirección de la mira, atravesando los obstáculos del terreno y creando una pared por todo el recorrido. ALTERNA EL MODO DE DISPARO mientras trazas la pared para acabarla antes de tiempo. Los jugadores golpeados se ven ralentizados.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Harbor_E_v001_web.mp4"
+      },
+      "c": {
+        "header": "C - CASCADA",
+        "body": "EQUIPA una ola de agua. DISPARA para enviarla hacia delante y hacer que atraviese las paredes. ÚSALA DE NUEVO para detener la ola. Los jugadores golpeados se ven ralentizados.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Harbor_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - AJUSTE DE CUENTAS",
+        "body": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar un géiser que nace del suelo. Los enemigos de la zona serán objetivo de varios ataques del géiser. Los jugadores que se vean atrapados por un impacto quedan aturdidos.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Harbor_X_v001_web.mp4"
+      }    
+  },
+  {
+    "id": "14e2e88d-08b3-47fa-8e07-ebe1a8b7a23f",
+    "type": "controlador",
+    "name": "Omen",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Omen.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/Omen.webp",
+    "description": "Omen, el fantasma sombrío, es un controlador que se\nmueve entre las sombras para cegar a sus enemigos. Con la\nhabilidad de teletransportarse y oscurecer la visión de sus\nenemigos, Omen es una pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - PARANOIA",
+        "body": "Dispara INSTANTÁNEAMENTE un proyectil sombrío hacia delante que reduce brevemente el alcance de la visión de todos los jugadores que toca. El proyectil puede atravesar paredes.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Omen_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - VELO TENEBROSO",
+        "body": "EQUIPA un orbe sombrío y te adentras en un mundo paralelo para colocarlo y marcar el objetivo de los orbes. PULSA la tecla de la habilidad para lanzar el orbe sombrío a la ubicación señalada, lo que genera una esfera sombría de larga duración que bloquea la visión. MANTÉN PULSADO el botón de disparar al apuntar para que el marcador se aleje más. MANTÉN PULSADO el DISPARO ALTERNATIVO al apuntar para que el marcador se acerque más. PULSA RECARGAR para cambiar al modo de apuntado normal.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Omen_E_v001_web.mp4"
+      },
+      "c": {
+        "header": "C - APARICIÓN TENEBROSA",
+        "body": "EQUIPA una habilidad para caminar entre las sombras y muestra su indicador de alcance. DISPARAD para iniciar un breve periodo de canalización y después teleportaros a la ubicación señalada.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Omen_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - DESDE LAS SOMBRAS",
+        "body": "EQUIPA un mapa táctico. DISPARAD para empezar a teleportaros a la ubicación seleccionada. Mientras se teleporta, Omen aparecerá como una sombra que los enemigos pueden destruir para cancelar su teleportación.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Omen_X_v001_web.mp4"
+      }    
+  },
+  {
+    "id": "45c2d881-ff47-40d4-b8b1-ea4af7e5eaf1",
+    "type": "controlador",
+    "name": "Viper",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Viper.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/viper.webp",
+    "description": "Viper, la química estadounidense, es una controladora que\ncontrola el campo de batalla con venenos y gases tóxicos.\nCon la habilidad de crear nubes de gas y reducir la visión de\nsus enemigos, Viper es una pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - NUBE VENENOSA",
+        "body": "EQUIPA una granada de gas. DISPARAD para lanzar la granada, que permanecerá toda la ronda. VOLVED A USAR la habilidad para generar una nube de gas tóxico a cambio de combustible. La granada se puede VOLVER A USAR más de una vez y se puede recoger para VOLVER A COLOCARLA.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Viper_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - PANTALLA TÓXICA",
+        "body": "EQUIPA un lanzagranadas de gas. DISPARAD para desplegar una larga hilera de granadas de gas que se pueden reactivar para crear un alto muro de gas tóxico a cambio de combustible. Se puede VOLVER A USAR más de una vez.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Viper_E_v001_web.mp4"
+      },
+      "c": {
+        "header": "C - VENENO DE SERPIENTE",
+        "body": "EQUIPA un lanzador químico. DISPARAD para lanzar un cartucho que se rompe al impactar contra el suelo, lo que genera una zona química persistente que daña a los enemigos.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Viper_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - POZO DE LA VÍBORA",
+        "body": "EQUIPA un pulverizador químico. DISPARAD para pulverizar una nube química en todas direcciones alrededor de Viper, lo que genera una gran nube que reduce el alcance de la visión y la vida máxima de los jugadores que se encuentren dentro de ella.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Viper_X_v001_web.mp4"
+      }    
+  },
+  {
+    "id": "31b2fb34-7049-4f88-b0f7-50eb5f7d7f56",
+    "type": "duelista",
+    "name": "Iso",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/iso.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/ISO.webp",
+    "description": "Iso, la asesina interdimensional, es una duelista que\nse desplaza entre las dimensiones para sorprender a sus\nenemigos. Con la habilidad de teletransportarse y lanzar\nproyectiles moleculares, Iso es una pieza clave en cualquier\nequipo.",
+      "q": {
+        "header": "Q - SOCAVAR",
+        "body": "EQUIPA un proyectil molecular. DISPARA para lanzarlo hacia delante, lo que aplica brevemente Fragilidad a todos los jugadores que toca. El proyectil puede atravesar objetos sólidos, incluso paredes.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Iso_Ability_Q.mp4"
+      },
+      "e": {
+        "header": "E - DISPARO DOBLE",
+        "body": "INICIA un temporizador de concentración. Cuando termina, Iso entra en un estado de energía durante el cual los enemigos abatidos que ha asesinado o dañado generan un orbe de energía. Disparar al orbe otorga a Iso un escudo que absorbe una única vez el daño de cualquier fuente.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Iso_Ability_E.mp4"
+      },
+      "c": {
+        "header": "C - CONTINGENCIA",
+        "body": "EQUIPA para reunir energía prismática. DISPARA para enviar al frente un muro indestructible de energía que bloquea las balas.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Iso_Ability_C.mp4"
+      },
+      "x": {
+        "header": "X - CONTRATO DE ASESINATO",
+        "body": "EQUIPA una arena interdimensional. DISPARA para lanzar una columna de energía a través del campo de batalla que arrastra a Iso y al primer enemigo alcanzado a la arena. Allí os batís en duelo a muerte.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Iso_Ability_X-Larger.mp4"
+      }    
+  },
+  {
+    "id": "cd0a5b11-9c1b-4af1-9029-7fd2b9ae8de0",
+    "type": "duelista",
+    "name": "Jett",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Jett.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/jett.webp",
+    "description": "Jett, la asesina surcoreana, es una duelista que se\nmueve con rapidez y precisión para sorprender a sus\nenemigos. Con la habilidad de propulsarse y lanzar cuchillos\nprecisos, Jett es una pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - VENDAVAL",
+        "body": "Propulsa INSTANTÁNEAMENTE a Jett a mucha altura hacia arriba.",
+        "video":"/Prueba paralax/Agents/FotosHabilidades/Jett_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - VIENTO DE COLA",
+        "body": "ACTIVA para preparar una ráfaga de viento durante un tiempo limitado. VUELVE A USAR el viento para propulsar a Jett en la dirección en la que se esté moviendo. Si Jett está quieta, se propulsa hacia delante. La carga de Viento de cola se reinicia cada dos asesinatos.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Jett_E_rework_web.mp4"
+      },
+      "c": {
+        "header": "C - BORRASCA",
+        "body": "Lanza un proyectil INSTANTÁNEAMENTE que se expande para crear una nube que bloquea la visión brevemente al impactar contra una superficie. MANTENED PULSADO el botón de la habilidad para que el humo se curve en la dirección de la mira.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Jett_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - TORMENTA DE CUCHILLAS",
+        "body": "EQUIPA un conjunto de cuchillos volantes de alta precisión. DISPARA para lanzar un único cuchillo y recarga los cuchillos con un asesinato. ALTERNA EL MODO DE DISPARO para lanzar todos los cuchillos restantes, pero no se recargan con un asesinato.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Jett_X_v001_web.mp4"
+      }    
+  },
+  {
+    "id": "7fba1c41-67ea-40a3-b23f-2737f5e4e948",
+    "type": "duelista",
+    "name": "Neon",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Neon.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/neon.webp",
+    "description": "Neon, la asesina eléctrica, es una duelista que se\nmueve con rapidez y precisión para sorprender a sus\nenemigos. Con la habilidad de lanzar rayos eléctricos y\npropulsarse, Neon es una pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - PROYECTIL ELECTRIZANTE",
+        "body": "Lanza INSTANTÁNEAMENTE un rayo de energía que rebota una vez. Al golpear cada superficie, el rayo electrifica el suelo bajo ella con una explosión aturdidora.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/VAL_Neon_Ability-Q_Preview_Stun_noHUD_Web_h264.mp4"
+      },
+      "e": {
+        "header": "E - CAMBIO DE MARCHA",
+        "body": "Canaliza INSTANTÁNEAMENTE el poder de Neon para aumentar su velocidad. Cuando esté cargada, utilizad el DISPARO ALTERNATIVO para activar un deslizador eléctrico. La carga del deslizador se reinicia con cada dos asesinatos.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/VAL_Neon_Ability-E_Preview_Sprint_noHUD_Web_h264.mp4"
+      },
+      "c": {
+        "header": "C - VIA RÁPIDA",
+        "body": "DISPARA dos líneas de energía hacia delante por el suelo. Dichas líneas se desplazan una corta distancia o hasta chocar contra algún obstáculo. Entonces, las líneas se alzan para convertirse en muros de energía estática que bloquean la visión e infligen daño a los enemigos que los atraviesan.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/VAL_Neon_Ability-C_Preview_Walls_noHUD_Web_h264.mp4"
+      },
+      "x": {
+        "header": "X - SOBRECARGA",
+        "body": "Neon desata todo su poder y velocidad durante un breve periodo de tiempo. DISPARAD para canalizar su poder en un mortífero rayo móvil y preciso. Su duración se reinicia con cada asesinato.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/VAL_Neon_Ability-X_Preview_Ult_noHUD_Web_h264.mp4"
+      }    
+  },
+  {
+    "id": "a1e0f78d-5c3e-46b5-b43d-598c3f4d9ae6",
+    "type": "duelista",
+    "name": "Phoenix",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Phoenix.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/phoenix.webp",
+    "description": "Phoenix, el británico incendiario, es un duelista que\nse recupera rápidamente y se cura a sí mismo. Con la\nhabilidad de lanzar bolas de fuego y crear muros de llamas,\nPhoenix es una pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - BOLA CURVA",
+        "body": "EQUIPA un orbe fulgurante que dibuja una trayectoria curva y explota poco después de haberlo lanzado. DISPARAD para lanzar el orbe fulgurante hacia la izquierda, lo que hará que detone y ciegue a cualquier jugador que lo vea. ALTERNAD EL MODO DE DISPARO para lanzar el orbe fulgurante hacia la derecha.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Phoenix_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - COMBUSTIÓN",
+        "body": "EQUIPA una bola de fuego. DISPARAD para lanzar una bola de fuego que explota transcurrido un tiempo determinado o al impactar contra el suelo, lo que crea una zona de fuego persistente que inflige daño a los enemigos.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Phoenix_E_v001_web.mp4"
+      },
+      "c": {
+        "header": "C - LLAMARADA",
+        "body": "EQUIPA una pared de llamas. DISPARAD para crear una línea de llamas que avanza hacia adelante, lo que forma una pared de fuego que bloquea la visión e inflige daño a los jugadores enemigos que la atraviesen. MANTENED PULSADO DISPARAR para curvar la pared en la dirección de la mira.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Phoenix_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - CENIZAS",
+        "body": "Coloca INSTANTANEAMENTE un marcador en la ubicación de Phoenix. Mientras esta habilidad esté activa, morir o dejar que se agote el temporizador hará que se termine la habilidad y devolverá a Phoenix a esta ubicación con toda la vida.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Phoenix_X_v001_web.mp4"
+      }    
+  },
+  {
+    "id": "30a8d85b-d828-4e87-81c4-07b5f2a0cf5f",
+    "type": "duelista",
+    "name": "Raze",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/raze.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/raze.webp",
+    "description": "Raze, la artillera explosiva, es una duelista que se\nespecializa en la destrucción. Con la habilidad de lanzar\nbombas y granadas, Raze es una pieza clave en cualquier\nequipo.",
+      "q": {
+        "header": "Q - FARDO EXPLOSIVO",
+        "body": "Lanza AL INSTANTE un fardo explosivo que se adhiere a las superficies. VOLVED A USAR la habilidad después de que el fardo se adhiera para detonarlo y que dañe y desplace a todo aquello que alcance. Esta habilidad no inflige daño a Raze, pero sí que recibirá daño por caída si salta lo suficientemente alto.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Raze_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - BALAS DE PINTURA",
+        "body": "EQUIPA una granada de racimo. DISPARA para lanzar la granada, lo que causa daño y crea submuniciones que infligen daño a cualquiera que esté dentro del rango. ALTERNA EL MODO DE DISPARO para tirarlo. La carga de Balas de pintura se reinicia cada dos asesinatos.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Raze_E_v001_web.mp4"
+      },
+      "c": {
+        "header": "C - BOT EXPLOSIVO",
+        "body": "EQUIPA un bot explosivo. DISPARAD para desplegar el bot y hacer que se desplace en línea recta por el terreno, rebotando por las paredes. El bot explosivo se fijará a los enemigos que encuentre en un cono frontal y los perseguirá. Si los alcanza, explotará e infligirá una gran cantidad de daño.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Raze_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - CIERRATELONES",
+        "body": "EQUIPA un lanzacohetes. DISPARA para lanzar un cohete que inflige un daño en área masivo al entrar en contacto con cualquier cosa.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Raze_X_v001_web.mp4"
+      }    
+  },
+  {
+    "id": "f2e8dc42-003e-4bb1-a4f6-5c5b5e8f4b08",
+    "type": "duelista",
+    "name": "Reyna",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Reyna.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/reyna.webp",
+    "description": "Reyna, la vampira mexicana, es una duelista que se\nalimenta de sus enemigos. Con la habilidad de curarse y\nvolver invisible, Reyna es una pieza clave en cualquier\nequipo.",
+      "q": {
+        "header": "Q - DEVORAR",
+        "body": "Los enemigos asesinados por Reyna dejan tras de sí orbes de alma que duran 3 segundos. Consume INSTANTÁNEAMENTE un orbe de alma cercano y se cura durante un breve periodo. Si se obtienen más de 100 puntos de vida con esta habilidad, la cantidad adicional se irá perdiendo con el tiempo. Si EMPERATRIZ está activa, esta habilidad se lanzará de forma automática y no consumirá el orbe.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Reyna_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - DESPRECIAR",
+        "body": "Consume INSTANTÁNEAMENTE un orbe de alma cercano y se vuelve intangible durante un breve periodo. Si EMPERATRIZ está activa, se vuelve invisible también.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Reyna_E_v002_web.mp4"
+      },
+      "c": {
+        "header": "C - MIRADA LASCIVA",
+        "body": "EQUIPA un ojo etéreo e indestructible. ACTIVADLA para lanzar el ojo hacia delante una corta distancia. El ojo limitará la visión de todos los enemigos que lo miren.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Reyna_C_v002_web.mp4"
+      },
+      "x": {
+        "header": "X - EMPERATRIZ",
+        "body": "Entra en un frenesí INSTANTÁNEO que aumenta drásticamente la velocidad de disparo, de equipamiento y de recarga. Conseguir un asesinato reinicia la duración.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Reyna_X_v001_web.mp4"
+      }    
+  },
+  {
+    "id": "d9a9b3f3-7601-4f85-8717-4dbff6b96798",
+    "type": "duelista",
+    "name": "Yoru",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Yoru.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/yoru.webp",
+    "description": "Yoru, el agente japonés, es un duelista que se desplaza\nentre las dimensiones para sorprender a sus enemigos. Con\nla habilidad de teletransportarse y lanzar destellos, Yoru es\nuna pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - PUNTO CIEGO",
+        "body": "EQUIPA para arrancar un fragmento dimensional inestable de la realidad. DISPARA para lanzar el fragmento, lo que activa un destello que se carga al impactar contra una superficie sólida.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Yoru_Abilities_Blinding_1_1.mp4"
+      },
+      "e": {
+        "header": "E - INFILTRACIÓN",
+        "body": "EQUIPA un vínculo de grietas. DISPARA para lanzarlo hacia delante. ALTERNA EL MODO DE DISPARO para colocarlo en el sitio. ACTIVA para teleportarte a la ubicación del vínculo. USA para activar un teleportar falso.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Website_Yoru_Rework_Gatecrash_v2.mp4"
+      },
+      "c": {
+        "header": "C - ENGAÑO",
+        "body": "EQUIPA un eco que se transforma en una imagen idéntica de Yoru al activarse. DISPARA para activar la imagen al instante y enviarla hacia delante. ALTERNA el modo de disparo para colocar un eco inactivo. USA para transformar un eco inactivo en una imagen y enviarla hacia delante. Las imágenes explotan con un destello al ser destruidas por enemigos.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Website_Yoru_Rework_Fakeout_v2.mp4"
+      },
+      "x": {
+        "header": "X - VIAJE INTERDIMENSIONAL",
+        "body": "EQUIPA una máscara que te permite ver entre dimensiones. DISPARA para adentrarte en la dimensión de Yoru. Los enemigos que estén fuera no podrán verte ni hacerte daño. REACTIVA la habilidad para salir antes de la dimensión de Yoru.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Website_Yoru_Rework_Dimensional_Drift_v2.mp4"
+      }    
+  },
+  {
+    "id": "bd7dfc0b-d9cf-466b-a1fc-4e3d5e2b6b38",
+    "type": "iniciador",
+    "name": "Breach",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Breach.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/breach.webp",
+    "description": "Breach, el sueco de la onda de choque, es un iniciador\nque desestabiliza a sus enemigos con sus habilidades. Con la\nhabilidad de lanzar explosiones y aturdir a sus enemigos,\nBreach es una pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - EXPLOSIÓN CEGADORA",
+        "body": "EQUIPA una carga explosiva cegadora. DISPARAD la carga para liberar una rápida explosión que atraviesa la pared. Cuando detona, la carga ciega a todos los jugadores que la estén mirando.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Breach_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - FALLA",
+        "body": "EQUIPA una bomba sísmica. MANTENED PULSADO DISPARAR para aumentar la distancia. SOLTAD para liberar un seísmo que aturdirá a todos los jugadores dentro de la zona y en una línea hasta ella.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Breach_E_v001_web.mp4"
+      },
+      "c": {
+        "header": "C - RÉPLICA",
+        "body": "EQUIPA una carga explosiva de fusión. DISPARAD la carga para liberar una explosión que atraviesa la pared tras un retardo. La explosión inflige mucho daño a cualquiera que esté dentro del área afectada.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Breach_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - FRAGOR IMPARABLE",
+        "body": "EQUIPA una carga explosiva sísmica. DISPARAD para liberar un seísmo que se extenderá por una gran zona en forma de cono. El seísmo aturde y lanza por los aires a todos los jugadores que estén en el interior de la zona.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Breach_X_v001_web.mp4"
+      }    
+  },
+  {
+    "id": "8fcb87a7-5193-4e58-a7b8-ea96c8d6b315",
+    "type": "iniciador",
+    "name": "Fade",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Fade.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/fade.webp",
+    "description": "Fade, el agente de la sombra, es un iniciador que se\nmueve entre las sombras para sorprender a sus enemigos. Con\nla habilidad de teletransportarse y lanzar destellos, Fade es\nuna pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - APRESAR",
+        "body": "Equipa un orbe hecho con tinta de pesadilla. DISPARA para lanzar el orbe que, tras un determinado periodo de tiempo, caerá en picado hacia el suelo. Al llegar al suelo, la tinta explotará y se creará una zona de la que los enemigos no podrán escapar por las vías habituales. VUELVE A ACTIVAR la habilidad para que el proyectil caiga antes en un punto de su trayectoria.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Q-seize_video_NEW.mp4"
+      },
+      "e": {
+        "header": "E - TORMENTO",
+        "body": "Equipa una pesadilla. DISPARA para lanzar el orbe que, tras un determinado periodo de tiempo, caerá en picado hacia el suelo. Al llegar al suelo, el orbe se convertirá en una pesadilla que revelará la ubicación de los enemigos que se encuentren en su línea de visión. Los enemigos pueden destruir la pesadilla. VUELVE A ACTIVAR la habilidad para que el proyectil caiga antes en un punto de su trayectoria.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/E-Haunt_video.mp4"
+      },
+      "c": {
+        "header": "C - ACECHADORE",
+        "body": "EQUIPA un Acechador. DISPARA para enviar al Acechador, que se desplazará en línea recta. El Acechador se adherirá a los enemigos o rastros situados en su cono de visión frontal y los perseguirá. Si los alcanza, reducirá sus campos de visión. MANTÉN PULSADO el botón de DISPARAR para dirigir al Acechador en la dirección de la mira.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/C-Prowler_video.mp4"
+      },
+      "x": {
+        "header": "X - OCASO",
+        "body": "EQUIPA el poder del miedo. DISPARA para emitir una oleada de energía terrorífica capaz de atravesar paredes. Esta energía deja un rastro hasta el oponente y, además, lo ensordece y aplica declive.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/X-Nightfall_Video.mp4"
+      }    
+  },
+  {
+    "id": "0a4d58e4-4d29-473e-bd53-f4a25e65a20f",
+    "type": "iniciador",
+    "name": "Gekko",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Gekko.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/gekko.webp",
+    "description": "Gekko, el agente camaleón, es un iniciador que se\ncamufla para sorprender a sus enemigos. Con la habilidad de\nlanzar explosiones y aturdir a sus enemigos, Gekko es una\npieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - WINGMAN",
+        "body": "EQUIPA a Wingman. DISPARA para mandar a Wingman hacia delante en busca de enemigos. Wingman libera una explosión aturdidora en dirección al primer enemigo que ve. ALTERNA EL MODO DE DISPARO mientras apuntas a una zona de la Spike o a una Spike colocada para que Wingman la coloque o la desarme. Para colocarla, Gekko debe tener la Spike en su inventario. Cuando Wingman desaparece, vuelve a su estado de glóbulo en reposo. INTERACTÚA para recuperar el glóbulo y obtener otra carga de Wingman tras un breve enfriamiento.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Website_Gekko_Wingman_Stun_FNL.mp4"
+      },
+      "e": {
+        "header": "E - DIZZY",
+        "body": "EQUIPA a Dizzy. DISPARA para lanzar a Dizzy volando hacia delante. Dizzy carga y libera explosiones de plasma hacia los enemigos en su campo de visión. El plasma ciega a los enemigos alcanzados. Cuando Dizzy desaparece, vuelve a su estado de glóbulo en reposo. INTERACTÚA para recuperar el glóbulo y obtener otra carga de Dizzy tras un breve enfriamiento.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Website_Gekko_Dizzy_FNL.mp4"
+      },
+      "c": {
+        "header": "C - MOSH",
+        "body": "EQUIPA a Mosh. DISPARA para lanzar a Mosh como una granada. ALTERNA EL MODO DE DISPARO para lanzarlo por debajo del hombro. Al caer, Mosh se divide en varias copias en un área grande y, tras un breve lapso, explota.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Website_Gekko_MoshPit_FNL.mp4"
+      },
+      "x": {
+        "header": "X - THRASH",
+        "body": "EQUIPA a Thrash. DISPARA para vincular tu mente con la de Thrash y manejarla a través del territorio enemigo. ACTÍVALA para embestir hacia delante y explotar, deteniendo a cualquier enemigo en un pequeño radio. Cuando Thrash desaparece, vuelve a su estado de glóbulo en reposo. INTERACTÚA para recuperar el glóbulo y obtener otra carga de Thrash tras un breve enfriamiento. Thrash puede recuperarse una vez.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Website_Gekko_Thrash_FNL.mp4"
+      }    
+  },
+  {
+    "id": "5c5f9e8d-c135-4b4a-bf17-703b27e2a1b4",
+    "type": "iniciador",
+    "name": "Kayo",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Kayo.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/kayo.webp",
+    "description": "Kayo, el agente de la radianita, es un iniciador que se\nmueve con rapidez y precisión para sorprender a sus\nenemigos. Con la habilidad de lanzar granadas y fragmentos,\nKayo es una pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - UNIDAD/FLASH",
+        "body": "EQUIPA una granada cegadora. DISPARA para lanzar la granada por arriba. ALTERNA EL MODO DE DISPARO para lanzar una granada más débil que explota rápidamente. La cegadora explota tras un breve tiempo y ciega a todo el que se encuentre en la línea de visión.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/KAYO_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - PUNTO/CERO",
+        "body": "EQUIPA una cuchilla de supresión. DISPARA para lanzarla. La cuchilla se adhiere a la primera superficie a la que golpee, se carga y suprime a cualquiera que se encuentre en el radio de la explosión. Los enemigos pueden destruir la cuchilla.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/KAYO_E_v002_web.mp4"
+      },
+      "c": {
+        "header": "C - FRAG/MENTO",
+        "body": "EQUIPA un fragmento explosivo. DISPARA para lanzarlo. El fragmento se pega al suelo y explota varias veces, lo que inflige daño casi mortal en el centro con cada explosión.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/KAYO_C_v002_web.mp4"
+      },
+      "x": {
+        "header": "X - CMD/ANULAR",
+        "body": "Experimenta una sobrecarga INSTANTÁNEA de energía de radianita polarizada en forma de pulsos de gran radio que se emiten desde KAY/O. Los enemigos que reciban el impacto de pulsos quedan silenciados durante un breve periodo de tiempo. Cuando está sobrecargado, KAY/O obtiene Estimulante de combate y puede volver a estabilizarse si resulta derribado.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/KAYO_X_v003_web.mp4"
+      }    
+  },
+  {
+    "id": "1898dbd7-8d23-4be1-872d-cab13b1a6be2",
+    "type": "iniciador",
+    "name": "Skye",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Skye.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/skye.webp",
+    "description": "Skye, la australiana rastreadora, es una iniciadora que\nse mueve con rapidez y precisión para sorprender a sus\nenemigos. Con la habilidad de lanzar buscadores y curar a\nsus aliados, Skye es una pieza clave en cualquier equipo.",
+      "q": {
+        "header": "Q - PRECURSOR",
+        "body": "EQUIPA un amuleto de lobo marsupial. DISPARA para desplegar al depredador y controlarlo. Mientras se está controlando al lobo, DISPARAR hace que salte hacia delante y explote, lo que aturde e inflige daño a los enemigos que golpee.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Val_Skye_Q_Ability_Web.mp4"
+      },
+      "e": {
+        "header": "E - LUZ GUÍA",
+        "body": "EQUIPA un amuleto de halcón. DISPARA para lanzarlo hacia adelante. MANTENER PULSADO DISPARAR guía al halcón en la dirección de la mira. VOLVER A ACTIVAR la habilidad cuando el halcón está en el aire lo transforma en un destello cegador que emite un sonido de confirmación de impacto si ha cegado a un enemigo.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Val_Skye_E_Ability_Web.mp4"
+      },
+      "c": {
+        "header": "C - REFORESTACIÓN",
+        "body": "EQUIPA un amuleto de curación. MANTENER PULSADO canaliza la habilidad, que cura a los aliados que estén dentro del alcance y del campo de visión. Se puede volver a utilizar hasta que se quede sin curación disponible. Skye no se puede curar a sí misma.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Val_Skye_C_Ability_Web.mp4"
+      },
+      "x": {
+        "header": "X - BUSCADORES",
+        "body": "EQUIPA un amuleto de buscador. DISPARA para desplegar tres buscadores que localizan a los tres enemigos más cercanos. Si un buscador alcanza a su objetivo, limita su visión. Los enemigos pueden destruir a los buscadores.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Val_Skye_X_Ability_Web.mp4"
+      }    
+  },
+  {
+    "id": "beeb65f1-cfc9-4d1d-b287-7b84192d1c9a",
+    "type": "iniciador",
+    "name": "Sova",
+    "photo": "/Prueba paralax/Agents/FotosAgentes/Sova.webp",
+    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/sova.webp",
+    "description": "Sova, el ruso cazador, es un iniciador que se mueve con\nrapidez y precisión para sorprender a sus enemigos. Con la\nhabilidad de lanzar flechas y drones, Sova es una pieza clave\nen cualquier equipo.",
+      "q": {
+        "header": "Q - FLECHA EXPLOSIVA",
+        "body": "EQUIPA un arco con una flecha explosiva. DISPARA para lanzar la flecha explosiva hacia delante. Explotará cuando impacte e infligirá daño a los enemigos cercanos. MANTÉN PULSADO para ampliar su alcance. ALTERNA EL MODO DE DISPARO para añadir hasta dos rebotes a la flecha.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Sova_Q_v001_web.mp4"
+      },
+      "e": {
+        "header": "E - PROYECTIL DE RECONOCIMIENTO",
+        "body": "EQUIPA un arco con un proyectil de reconocimiento. Se activará cuando impacte y revelará la posición de los enemigos que se encuentren en la línea de visión del proyectil. El proyectil puede ser destruido. MANTÉN PULSADO para ampliar su alcance. ALTERNA EL MODO DE DISPARO para añadir hasta dos rebotes a la flecha.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Sova_E_v001_web.mp4"
+      },
+      "c": {
+        "header": "C - DRON DE RECONOCIMIENTO",
+        "body": "EQUIPA un dron de reconocimiento. DISPARA para desplegar el dron y controlar su movimiento. Cuando tengas el control del dron, DISPARA para lanzar un dardo marcador que revelará la ubicación de cualquier jugador alcanzado. Los enemigos pueden destruir el Dron de reconocimiento.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Sova_C_v001_web.mp4"
+      },
+      "x": {
+        "header": "X - FURIA DEL CAZADOR",
+        "body": "EQUIPA un arco con tres proyectiles de energía de largo alcance que atraviesan paredes. DISPARAD para lanzar un proyectil de energía en línea recta frente a Sova que infligirá daño y revelará la posición de los enemigos que se encuentren a su paso. Esta habilidad puede VOLVERSE A USAR hasta dos veces más mientras el temporizador de la habilidad esté activo.",
+        "video": "/Prueba paralax/Agents/FotosHabilidades/Sova_X_v001_web.mp4"
+      }    
+  }
+]

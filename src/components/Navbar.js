@@ -27,7 +27,7 @@ function Navbar () {
     >About</a
   >
   <a
-    href="/src/index.html"
+    href="/index.html"
     class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
     >Home</a
   >
@@ -72,11 +72,6 @@ function Navbar () {
       href="/result.html"
       class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
       >Result</a>
-      <a
-        href="/Users.html"
-        class="text-white mx-4 my-2 text-lg hover:text-gray-300 hover:bg-gray-700 transition rounded-full py-2 px-4"
-        >Users</a
-      >
       `
     }
     nav.innerHTML += `
