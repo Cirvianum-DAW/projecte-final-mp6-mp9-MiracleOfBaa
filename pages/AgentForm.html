@@ -14,29 +14,29 @@
     />
     <link rel="icon" href="/Fotos/descarga.jpeg" type="image/x-icon" />
   </head>
-  <body class="font-sans relativ bg-black bg-cover Fotos">
+  <body class="font-sans relative bg-black bg-cover Fotos">
     <div class="container mx-auto px-4 py-8">
       <h1 class="text-3xl text-center mb-6 text-gray-200">Create Agent</h1>
       <form
-        action="#"
-        method="POST"
+        id="createForm"
         enctype="multipart/form-data"
         class="max-w-lg mx-auto"
       >
         <div class="mb-4">
-          <label for="type" class="block mb-1 text-gray-200">Type</label>
+          <label for="type" class="block mb-1 text-gray-200">Agent Type</label>
           <select
             id="type"
             name="type"
             class="w-full p-2 border border-white rounded bg-black text-white"
           >
-            <option value="Type 1">Type 1</option>
-            <option value="Type 2">Type 2</option>
-            <option value="Type 3">Type 3</option>
+            <option value="centinela">Centinela</option>
+            <option value="controlador">Controlador</option>
+            <option value="duelista">Duelista</option>
+            <option value="iniciador">Iniciador</option>
           </select>
         </div>
         <div class="mb-4">
-          <label for="name" class="block mb-1 text-gray-200">Name</label>
+          <label for="name" class="block mb-1 text-gray-200">Agent Name</label>
           <input
             type="text"
             id="name"
@@ -46,7 +46,7 @@
         </div>
         <div class="mb-4">
           <label for="description" class="block mb-1 text-gray-200"
-            >Description</label
+            >Agent Description</label
           >
           <textarea
             id="description"
@@ -55,7 +55,9 @@
           ></textarea>
         </div>
         <div class="mb-4">
-          <label for="photo" class="block mb-1 text-gray-200">Photo</label>
+          <label for="photo" class="block mb-1 text-gray-200"
+            >Agent Photo</label
+          >
           <input
             type="file"
             id="photo"
@@ -66,7 +68,7 @@
         </div>
         <div class="mb-4">
           <label for="wallpaper" class="block mb-1 text-gray-200"
-            >Wallpaper</label
+            >Agent Wallpaper</label
           >
           <input
             type="file"
@@ -76,7 +78,7 @@
             class="w-full bg-black text-white"
           />
         </div>
-        <div class="mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div class="section">
             <h2 class="text-xl mb-2 text-gray-200">Q Section</h2>
             <div class="mb-2">
@@ -113,12 +115,120 @@
               />
             </div>
           </div>
-          <!-- Similar sections for E, C, and X -->
+          <div class="section">
+            <h2 class="text-xl mb-2 text-gray-200">E Section</h2>
+            <div class="mb-2">
+              <label for="e_header" class="block mb-1 text-gray-200"
+                >E Header</label
+              >
+              <input
+                type="text"
+                id="e_header"
+                name="e_header"
+                class="w-full p-2 border border-white rounded bg-black text-white"
+              />
+            </div>
+            <div class="mb-2">
+              <label for="e_body" class="block mb-1 text-gray-200"
+                >E Body</label
+              >
+              <textarea
+                id="e_body"
+                name="e_body"
+                class="w-full p-2 border border-white rounded bg-black text-white"
+              ></textarea>
+            </div>
+            <div>
+              <label for="e_video" class="block mb-1 text-gray-200"
+                >E Video</label
+              >
+              <input
+                type="file"
+                id="e_video"
+                name="e_video"
+                accept="video/*"
+                class="w-full bg-black text-white"
+              />
+            </div>
+          </div>
+          <div class="section">
+            <h2 class="text-xl mb-2 text-gray-200">C Section</h2>
+            <div class="mb-2">
+              <label for="c_header" class="block mb-1 text-gray-200"
+                >C Header</label
+              >
+              <input
+                type="text"
+                id="c_header"
+                name="c_header"
+                class="w-full p-2 border border-white rounded bg-black text-white"
+              />
+            </div>
+            <div class="mb-2">
+              <label for="c_body" class="block mb-1 text-gray-200"
+                >C Body</label
+              >
+              <textarea
+                id="c_body"
+                name="c_body"
+                class="w-full p-2 border border-white rounded bg-black text-white"
+              ></textarea>
+            </div>
+            <div>
+              <label for="c_video" class="block mb-1 text-gray-200"
+                >C Video</label
+              >
+              <input
+                type="file"
+                id="c_video"
+                name="c_video"
+                accept="video/*"
+                class="w-full bg-black text-white"
+              />
+            </div>
+          </div>
+          <div class="section">
+            <h2 class="text-xl mb-2 text-gray-200">X Section</h2>
+            <div class="mb-2">
+              <label for="x_header" class="block mb-1 text-gray-200"
+                >X Header</label
+              >
+              <input
+                type="text"
+                id="x_header"
+                name="x_header"
+                class="w-full p-2 border border-white rounded bg-black text-white"
+              />
+            </div>
+            <div class="mb-2">
+              <label for="x_body" class="block mb-1 text-gray-200"
+                >X Body</label
+              >
+              <textarea
+                id="x_body"
+                name="x_body"
+                class="w-full p-2 border border-white rounded bg-black text-white"
+              ></textarea>
+            </div>
+            <div>
+              <label for="x_video" class="block mb-1 text-gray-200"
+                >X Video</label
+              >
+              <input
+                type="file"
+                id="x_video"
+                name="x_video"
+                accept="video/*"
+                class="w-full bg-black text-white"
+              />
+            </div>
+          </div>
         </div>
         <button
           type="submit"
           class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
         >
+          <i class="fa fa-plus mr-1"></i>
           Create Agent
         </button>
       </form>

@@ -8,6 +8,8 @@ router.get('/', Controller.fetchAgents)
 
 router.get('/:id', Controller.fetchAgent)
 
+router.post('/', Controller.createAgent)
+
 router.post('/like', checkToken, Controller.toggleLike)
 
 router.delete('/:id', Controller.deleteAgent)

@@ -4,33 +4,33 @@
     "likedBy": [],
     "type": "centinela",
     "name": "Chamber",
-    "photo": "/Prueba paralax/Agents/FotosAgentes/Chamber.webp",
-    "wallpaper": "/Prueba paralax/Agents/FondosPantallaAgentes/CHAMBER.webp",
+    "photo": "/images/chamber-photo.webp",
+    "wallpaper": "/images/chamber-wallpaper.webp",
     "description": "El diseñador de armas francés, siempre bien vestido y bien\npertrechado, expulsa a los agresores con precisión letal.<br />\nChamber aprovecha su arsenal personalizado para resistir, elimina\nenemigos a distancia y crea la contingencia perfecta para cada plan.",
     "q": {
       "header": "Q - CAZADOR DE CABEZAS",
       "body": "ACTÍVALA para equipar una pistola pesada. Utiliza el botón de modo\nde DISPARO ALTERNATIVO para apuntar con la mira.",
-      "video": "/Prueba paralax/Agents/FotosHabilidades/VAL_broll_EP03-3_Chamber_Q.mp4"
+      "video": "/videos/chamber-q.mp4"
     },
     "e": {
       "header": "E - RENDEZ-VOUS",
       "body": "EQUIPA un anclaje de teleportación. DISPARA para colocarla en el\nsuelo. Mientras esté en el suelo y al alcance, REACTIVA la\nhabilidad para teleportarte rápidamente al anclaje. El anclaje se\npuede recoger para VOLVER A COLOCARLO.",
-      "video": "/Prueba paralax/Agents/FotosHabilidades/Chamber_E_rework_web.mp4"
+      "video": "/videos/chamber-e.mp4"
     },
     "c": {
       "header": "C - MARCA REGISTRADA",
       "body": "EQUIPA una trampa que escanea en busca de enemigos. DISPARA para\ncolocarla en el suelo. Cuando un enemigo visible entra en el\nalcance, la trampa inicia una cuenta atrás y, a continuación,\ndesestabiliza el terreno a su alrededor, lo que crea un campo\npersistente que ralentiza a los jugadores que se encuentren en su\ninterior. El anclaje se puede recoger para VOLVER A COLOCARLO.",
-      "video": "/Prueba paralax/Agents/FotosHabilidades/Chamber_C_rework_web.mp4"
+      "video": "/videos/chamber-c.mp4"
     },
     "x": {
       "header": "X - TOUR DE FORCE",
       "body": "ACTÍVALA para invocar un poderoso rifle de francotirador\npersonalizado que mata a los enemigos con cualquier impacto\ndirecto en la parte superior del cuerpo. ALTERNA EL MODO DE\nDISPARO para apuntar con la mira. Matar a un enemigo genera un\ncampo persistente que ralentiza a los jugadores que se encuentren\nen su interior.",
-      "video": "/Prueba paralax/Agents/FotosHabilidades/Chamber_X_rework_web.mp4"
+      "video": "/videos/chamber-x.mp4"
     }
   },
   {
     "id": "2f1a5c69-7b3e-4d7f-9a8f-6d2d69df82f4",
-    "likedBy": [],
+    "likedBy": ["0bf05215-eafb-4840-807a-ef4ce46113dd"],
     "type": "centinela",
     "name": "Chyper",
     "photo": "/Prueba paralax/Agents/FotosAgentes/Chyper.webp",

@@ -30,12 +30,24 @@ function fetchAgent (req, res, next) {
   }
 }
 
+function createAgent (req, res, next) {
+  try {
+    const id = req.params.id
+    const agents = readJsonFile('agents.json')
+    res.status(200).json({
+      agent: agents.filter(agent => agent.id === id)[0]
+    })
+  } catch (error) {
+    next(error)
+  }
+}
+
 function toggleLike (req, res, next) {
   try {
     const userId = req.user.id
     const agentId = req.body.agentId
     const users = readJsonFile('users.json')
-    if (users.filter(user => user.id === userId).likes.includes(agentId)) {
+    if (users.find(user => user.id === userId).likes.includes(agentId)) {
       unlikeAgent('users.json', userId, agentId)
       unlikedBy('agents.json', agentId, userId)
     } else {
@@ -60,4 +72,10 @@ function deleteAgent (req, res, next) {
   }
 }
 
-module.exports = { fetchAgents, fetchAgent, toggleLike, deleteAgent }
+module.exports = {
+  fetchAgents,
+  fetchAgent,
+  createAgent,
+  toggleLike,
+  deleteAgent
+}

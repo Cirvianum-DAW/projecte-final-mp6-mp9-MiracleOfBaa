@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const { join } = require('path')
 
 const authRoutes = require('./routes/auth.routes.js')
 const agentsRoutes = require('./routes/agents.routes.js')
@@ -17,6 +18,10 @@ app.use(cors())
 // Rutas
 app.use('/auth', authRoutes)
 app.use('/agents', agentsRoutes)
+
+// Public
+app.use('/images', express.static(join(__dirname, 'images')))
+app.use('/videos', express.static(join(__dirname, 'videos')))
 
 app.use((error, _req, res, _next) => {
   console.log(_next)
