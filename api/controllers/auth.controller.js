@@ -63,4 +63,16 @@ function loginUser (req, res, next) {
   }
 }
 
-module.exports = { registerUser, loginUser }
+function updateProfile (req, res, next) {
+  try {
+    const username = req.body.username
+    const password = req.body.password
+    
+    res.sendStatus(201)
+  } catch (error) {
+    console.log(error)
+    next(error)
+  }
+}
+
+module.exports = { registerUser, loginUser, updateProfile }

@@ -1,4 +1,6 @@
 const { readJsonFile } = require('../libs/json.js')
+const jwt = require('jsonwebtoken')
+const JWT_SECRET = require('../secret.js')
 const {
   deleteEntry,
   likeAgent,
@@ -9,7 +11,16 @@ const {
 
 function fetchAgents (req, res, next) {
   try {
-    const agents = readJsonFile('agents.json')
+    const authHeader = req.headers.authorization
+    const token = authHeader.split(' ')[1]
+    const filter = req.query.filter
+    let agents = readJsonFile('agents.json')
+    if (filter === 'liked' && token) {
+      const data = jwt.verify(token, JWT_SECRET)
+      agents = agents.filter(agent => agent.likedBy.includes(data.id))
+    } else if (filter && filter !== 'liked') {
+      agents = agents.filter(agent => agent.type === filter)
+    }
     res.status(200).json({
       agents
     })

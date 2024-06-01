@@ -1,5 +1,10 @@
-async function fetchAgents () {
-  const res = await fetch(`${window.API_URL}/agents`)
+async function fetchAgents (filter) {
+  let filterQuery = filter ? `?filter=${filter}` : ''
+  const res = await fetch(`${window.API_URL}/agents` + filterQuery, {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem('baa_session') || ''}`
+    }
+  })
   const json = await res.json()
   return json.agents
 }
@@ -73,9 +78,9 @@ function addAgent (token, agent) {
   document.getElementById('agents').appendChild(div)
 }
 
-async function setAgents (token) {
+async function setAgents (token, filter) {
   document.getElementById('agents').innerHTML = ''
-  const agents = await fetchAgents()
+  const agents = await fetchAgents(filter)
   for (const agent of agents) {
     addAgent(token, agent)
   }
@@ -96,4 +101,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     `
   }
   await setAgents(token)
+  document
+    .getElementById('filterBy')
+    .addEventListener('change', async function (e) {
+      await setAgents(token, e.target.value)
+    })
 })

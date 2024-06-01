@@ -8,13 +8,37 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="icon" href="/Fotos/descarga.jpeg" type="image/x-icon" />
     <link rel="stylesheet" href="/src/styles.css" />
+    <style>
+      .form {
+        clip-path: polygon(
+          20% 0%,
+          80% 0%,
+          100% 20%,
+          100% 80%,
+          80% 100%,
+          20% 100%,
+          0% 80%,
+          0% 20%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form-content {
+        text-align: center;
+      }
+    </style>
   </head>
   <style>
     /* Estilos adicionales */
     body {
-      background-color: #f3f4f6;
       font-family: Arial, sans-serif;
     }
 
@@ -25,12 +49,11 @@
     }
 
     .card {
-      background-color: #ffffff;
-      border: 2px solid #000000;
+      border: 2px solid white;
     }
 
     .card h2 {
-      color: #000000;
+      color: white;
     }
 
     input[type='text'],
@@ -68,13 +91,15 @@
       margin-bottom: 5px;
     }
   </style>
-  <body class="bg-white">
-    <div class="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+  <body class="bg-black">
+    <div class="container mx-auto mt-10 flex justify-center items-center">
       <!-- Tarjeta para editar perfil -->
-      <div class="card p-6 rounded-lg border border-black">
-        <h2 class="text-xl font-bold mb-4">Editar Perfil</h2>
+      <div class="card p-6 rounded-lg border border-white">
+        <h2 class="text-xl font-bold mb-4">Edit Profile</h2>
         <form id="editProfileForm" class="mb-4">
-          <label for="username" class="block mb-2">Nombre de Usuario:</label>
+          <label for="username" class="block text-gray-200 mb-2"
+            >Username:</label
+          >
           <input
             type="text"
             id="username"
@@ -83,75 +108,36 @@
             required
           />
 
-          <label for="email" class="block mb-2">Correo Electrónico:</label>
+          <label for="password" class="block text-gray-200 mb-2"
+            >Password:</label
+          >
           <input
-            type="email"
-            id="email"
-            name="email"
+            type="password"
+            id="password"
+            name="password"
             class="w-full px-3 py-2 mb-4 border rounded-md"
-            required
           />
 
           <button
-            type="submit"
+            id="saveChanges"
+            type="button"
             class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
           >
-            Guardar Cambios
+            Save Changes
           </button>
         </form>
-      </div>
-
-      <!-- Tarjeta para añadir agentes nuevos -->
-      <div class="card p-6 rounded-lg border border-black">
-        <h2 class="text-xl font-bold mb-4">Añadir Agente Nuevo</h2>
-        <form id="addAgentForm" class="mb-4" enctype="multipart/form-data">
-          <label for="agentName" class="block mb-2">Nombre del Agente:</label>
-          <input
-            type="text"
-            id="agentName"
-            name="agentName"
-            class="w-full px-3 py-2 mb-4 border rounded-md"
-            required
-          />
-
-          <label for="agentAbilities" class="block mb-2"
-            >Habilidades del Agente:</label
-          >
-          <textarea
-            id="agentAbilities"
-            name="agentAbilities"
-            class="w-full px-3 py-2 mb-4 border rounded-md"
-            required
-          ></textarea>
-
-          <label for="agentPhoto" class="block mb-2">Foto del Agente:</label>
-          <input
-            type="file"
-            id="agentPhoto"
-            name="agentPhoto"
-            accept="image/*"
-            class="w-full px-3 py-2 mb-4 border rounded-md"
-            required
-          />
-
-          <button
-            type="submit"
-            class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
-          >
-            Añadir Agente
-          </button>
-        </form>
-      </div>
-
-      <!-- Tarjeta para mostrar agentes favoritos -->
-      <div class="card p-6 rounded-lg border border-black">
-        <h2 class="text-xl font-bold mb-4">Agentes Favoritos</h2>
-        <ul id="favoriteAgents" class="list-disc pl-6">
-          <!-- Los agentes favoritos se llenarán aquí -->
-        </ul>
       </div>
     </div>
+    <!--<hr class="mt-5" />
+    <h2 class="text-center text-gray-200 text-xl bold mt-4">
+      Your Liked Agents
+    </h2>
+    <div
+      id="agents"
+      class="container mx-auto my-8 flex flex-wrap justify-center gap-8"
+    ></div>-->
     <script src="/src/utils.js"></script>
     <script src="/src/components/Navbar.js"></script>
+    <script src="/src/pages/ProfilePage.js"></script>
   </body>
 </html>
