@@ -1,10 +1,11 @@
+# TODO
+
 - CRUD personatges (admin) + Poder subir fotos y videos en la API
 - Filtrar persontages per tipus que tinguin a la BBDD, nombre, likes
 - Hacer que los usuarios puedan dar like de los personajes que les gustan (API)
 - Hacer que los usuarios puedan quitar los likes (API)
 - Poner un corazon en los personajes para que salgan los likes
 - Hacer que los usuarios puedan ver los personajes que han dado like
-- Hacer que el admin pueda ver los personajes que ha añadido (borrar/editar ahi)
 - Hacer pagina de perfil
 - Validaciones de formularios en todos
 - Implementar React en el Navbar (Navbar responsive de 3 barritas)

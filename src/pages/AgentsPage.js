@@ -1,23 +1,34 @@
-const API_URL = 'https://4dmv3bhs-3000.uks1.devtunnels.ms'
-
 async function fetchAgents () {
-  const res = await fetch(`${API_URL}/agents`)
+  const res = await fetch(`${window.API_URL}/agents`)
   const json = await res.json()
   return json.agents
 }
 
-function decodeJWT (token) {
-  const payload = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')
-  return JSON.parse(
-    decodeURIComponent(
-      atob(payload)
-        .split('')
-        .map(char => {
-          return '%' + ('00' + char.charCodeAt(0).toString(16)).slice(-2)
-        })
-        .join('')
-    )
-  )
+window.deleteAgent = async id => {
+  const res = await fetch(`${window.API_URL}/agents/${id}`, {
+    method: 'DELETE'
+  })
+  if (res.status !== 204) {
+    return alert('Algo ha fallado intentando borrar el agente')
+  }
+  location.reload()
+}
+
+window.toggleLike = async id => {
+  const res = await fetch(`${window.API_URL}/agents/like`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem('baa_session')}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      agentId: id
+    })
+  })
+  if (res.status !== 204) {
+    return alert('Algo ha ido mal con los likes')
+  }
+  location.reload()
 }
 
 function addAgent (token, agent) {
@@ -30,7 +41,11 @@ function addAgent (token, agent) {
             <div class="p-4">
                 <h3 class="text-white text-lg font-semibold">${agent.name}
                   ${token
-                    ? '<i class="fa fa-heart ml-2 text-gray-500 cursor-pointer"></i>'
+                    ? `<i onclick="window.toggleLike('${agent.id}')" class="fa fa-heart ml-2 cursor-pointer ${agent.likedBy.includes(
+                        token.id
+                      )
+                        ? 'text-red-500'
+                        : 'text-gray-500'}"></i>`
                     : ''}
                 </h3>
             </div>
@@ -41,7 +56,7 @@ function addAgent (token, agent) {
                     <i class="fa fa-pencil mr-1"></i>
                     Edit
                   </button>
-                  <button class="ml-3 bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out">
+                  <button onclick="window.deleteAgent('${agent.id}')" class="ml-3 bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out">
                     <i class="fa fa-trash mr-1"></i>
                     Delete
                   </button>
@@ -49,7 +64,7 @@ function addAgent (token, agent) {
             `
               : ``}
             <div class="flex justify-between px-4 py-2">
-                <a href="/Agent.html?id=${agent.id}" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out">
+                <a href="/pages/Agent.html?id=${agent.id}" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out">
                   <i class="fa fa-eye mr-1"></i>
                   View Agent
                 </a>
@@ -59,11 +74,27 @@ function addAgent (token, agent) {
   document.getElementById('agents').appendChild(div)
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+async function setAgents (token) {
+  document.getElementById('agents').innerHTML = ''
   const agents = await fetchAgents()
-  let token = localStorage.getItem('baa_session')
-  token = token !== null ? decodeJWT(token) : null
   for (const agent of agents) {
     addAgent(token, agent)
   }
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  let token = localStorage.getItem('baa_session')
+  token = token !== null ? window.decodeJWT(token) : null
+  if (token && token.role === 'admin') {
+    document.getElementById('filters').innerHTML += `
+      <a
+      href="/pages/AgentForm.html"
+      class="cursor-pointer px-4 py-2 bg-blue-500 text-white rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    >
+      <i class="fa fa-plus mr-1"></i>
+      Create Agent
+    </a>
+    `
+  }
+  await setAgents(token)
 })

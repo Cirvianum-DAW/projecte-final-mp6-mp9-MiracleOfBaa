@@ -3,6 +3,14 @@
     "id": "4f35ef14-fd5a-4ab9-8da0-fea4dc2be2e0",
     "role": "admin",
     "username": "admin",
-    "password": "admin"
+    "password": "admin",
+    "likes": []
+  },
+  {
+    "id": "0bf05215-eafb-4840-807a-ef4ce46113dd",
+    "role": "user",
+    "username": "miracle",
+    "password": "miracle",
+    "likes": []
   }
 ]

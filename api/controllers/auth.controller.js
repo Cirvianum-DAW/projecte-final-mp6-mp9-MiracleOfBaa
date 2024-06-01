@@ -20,7 +20,8 @@ function registerUser (req, res, next) {
       id: randomUUID(),
       role: 'user',
       username,
-      password
+      password,
+      likes: []
     })
     res.sendStatus(201)
   } catch (error) {

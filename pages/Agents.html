@@ -36,7 +36,10 @@
     </style>
   </head>
   <body class="font-sans relativ bg-black bg-cover Fotos">
-    <div class="flex justify-center items-center space-x-4 mb-6 mt-6">
+    <div
+      id="filters"
+      class="flex justify-center items-center space-x-4 mb-6 mt-6"
+    >
       <!-- Search bar -->
       <input
         type="text"
@@ -48,28 +51,20 @@
       <select
         class="px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
-        <option value="">Filter agents by</option>
+        <option disabled value="">Filter agents by</option>
         <option value="type1">Liked Agents</option>
         <option value="type2">Type: Centinela</option>
         <option value="type3">Type: Controlador</option>
         <option value="type4">Type: Duelista</option>
         <option value="type5">Type: Iniciador</option>
       </select>
-
-      <!-- Button -->
-      <a
-        href="/AgentForm.html"
-        class="cursor-pointer px-4 py-2 bg-blue-500 text-white rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
-        <i class="fa fa-plus mr-1"></i>
-        Create Agent
-      </a>
     </div>
     <div
       id="agents"
       class="container mx-auto my-8 flex flex-wrap justify-center gap-8"
     ></div>
-    <script src="src/components/Navbar.js"></script>
-    <script src="src/pages/AgentsPage.js"></script>
+    <script src="/src/utils.js"></script>
+    <script src="/src/components/Navbar.js"></script>
+    <script src="/src/pages/AgentsPage.js"></script>
   </body>
 </html>

@@ -23,17 +23,17 @@ const imageConfig = {
 }
 
 // Configuración de videos
-const videoOptions = {
+/* const videoOptions = {
   videoCodec: 'libx264',
   audioCodec: 'aac',
   outputOptions: ['-preset', 'fast', '-crf', '22', '-b:a', '192k']
-}
+} */
 
 // Limitar el número máximo de procesos de optimización simultáneos
-const maxConcurrentProcesses = 2 // Puedes ajustar este valor según tus necesidades
+// const maxConcurrentProcesses = 2 // Puedes ajustar este valor según tus necesidades
 
 // Mantener un seguimiento de los procesos en ejecución
-let runningProcesses = 0
+// let runningProcesses = 0
 
 // Función para obtener el tamaño de un archivo en bytes
 function getFileSize (filePath) {
@@ -83,7 +83,7 @@ async function optimizeImage (imagePath, relativePath, htmlStream) {
 }
 
 // Función para optimizar un video
-function optimizeVideo (videoPath, relativePath, htmlStream) {
+/* function optimizeVideo (videoPath, relativePath) {
   try {
     console.log(`Optimizando video: ${videoPath}`)
 
@@ -114,7 +114,7 @@ function optimizeVideo (videoPath, relativePath, htmlStream) {
     )
     runningProcesses-- // Decrementar el contador de procesos en ejecución en caso de error
   }
-}
+} */
 
 // Función para procesar los archivos multimedia de forma recursiva
 async function processMediaRecursively (

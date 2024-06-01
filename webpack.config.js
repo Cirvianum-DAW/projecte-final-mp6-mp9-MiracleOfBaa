@@ -1,54 +1,39 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-        },
-      },
-    ],
+          loader: 'babel-loader'
+        }
+      }
+    ]
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, 'dist')
     },
     compress: true,
-    port: 9000,
+    port: 9000
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './public/index.html',
-      chunks: ['main'],
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'login.html',
-      template: './public/login.html',
-      chunks: ['main'],
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'admin.html',
-      template: './public/admin.html',
-      chunks: ['main'],
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'dashboard.html',
-      template: './public/dashboard.html',
-      chunks: ['main'],
-    }),
-  ],
-};
+      chunks: ['main']
+    })
+  ]
+}

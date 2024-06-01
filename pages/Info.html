@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VALORANT - Webgrafía</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/Fotos/descarga.jpeg" type="image/x-icon" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif; /* Reemplaza 'background.jpg' con la ruta de tu imagen de fondo */
+        background-size: cover;
+        background-position: center;
+      }
+      nav {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.8
+        ); /* Fondo semi-transparente para el menú */
+      }
+      #recursos {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Fondo semi-transparente para la sección de webgrafía */
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 800px;
+      }
+      h2 {
+        color: #1f2937; /* Color de título */
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      a {
+        color: #4f46e5; /* Color de enlace */
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      a:hover {
+        color: #805ad5; /* Color de enlace al pasar el ratón */
+      }
+      p {
+        color: #ffffff; /* Color de texto */
+        margin-bottom: 10px;
+      }
+      footer {
+        background-color: rgb(
+          0,
+          0,
+          0
+        ); /* Fondo semi-transparente para el footer */
+        color: #ffffff; /* Color de texto */
+        text-align: center;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+      }
+      .comparison {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+      .image-container {
+        text-align: center;
+      }
+      .image-container img {
+        max-width: 200px;
+        height: auto;
+      }
+      .info {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <section id="recursos">
+        <h2 class="text-center">Webgrafía</h2>
+        <ul>
+          <li>
+            <a href="https://playvalorant.com/" class="underline"
+              >Sitio Oficial de Valorant</a
+            >
+            - El sitio oficial de Valorant proporciona información oficial sobre
+            el juego, noticias, actualizaciones y recursos para la comunidad.
+          </li>
+          <li>
+            <a href="https://www.reddit.com/r/VALORANT/" class="underline"
+              >Reddit de Valorant</a
+            >
+            - Un subreddit dedicado a discutir todo sobre Valorant, incluyendo
+            noticias, estrategias, clips destacados y más.
+          </li>
+          <li>
+            <a
+              href="https://www.copyright.gov/circs/circ40.pdf"
+              class="underline"
+              >Guía de Copyright para Desarrolladores de Juegos</a
+            >
+            - Una guía oficial proporcionada por la Oficina de Derechos de Autor
+            de los Estados Unidos que aborda cuestiones de derecho de autor
+            relevantes para los desarrolladores de juegos.
+          </li>
+          <li>
+            <a href="https://www.riotgames.com/en/legal" class="underline"
+              >Política de Uso de Contenido de Valorant</a
+            >
+            - Las políticas de uso de contenido de Valorant proporcionadas por
+            Riot Games. Aquí encontrarás información sobre el uso permitido de
+            su contenido en tu página web y cualquier restricción relacionada
+            con derechos de autor.
+          </li>
+          <li>
+            <a href="https://www.ign.com/wikis/valorant/" class="underline"
+              >"Valorant: Una Guía Completa" por IGN</a
+            >
+            - Una guía completa sobre Valorant que cubre aspectos como
+            personajes, armas, mapas, consejos y trucos, proporcionada por IGN.
+          </li>
+          <li>
+            <a href="https://youtu.be/G1120zk4l90" class="underline"
+              >Video Projecte!</a
+            >
+            - Video de presentación del projecte.
+          </li>
+        </ul>
+        <p class="mt-4 text-center">
+          Todos los recursos mencionados en esta webgrafía son propiedad de sus
+          respectivos dueños y se utilizan aquí con fines educativos y de
+          referencia.
+        </p>
+        <p class="text-center">
+          Los derechos de autor de los recursos mencionados pertenecen a sus
+          respectivos propietarios.
+        </p>
+      </section>
+    </div>
+    <div>
+      <footer>
+        <p>Derechos de autor © 2024 VALORANT. Todos los derechos reservados.</p>
+        <p>Hecho con ❤️ por MiracleOfBaa</p>
+      </footer>
+    </div>
+    <script src="/src/utils.js"></script>
+    <script src="/src/components/Navbar.js"></script>
+  </body>
+</html>

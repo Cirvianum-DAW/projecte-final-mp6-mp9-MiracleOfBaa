@@ -1,7 +1,5 @@
-const API_URL = 'https://4dmv3bhs-3000.uks1.devtunnels.ms'
-
 async function fetchAgent (id) {
-  const res = await fetch(`${API_URL}/agents/${id}`)
+  const res = await fetch(`${window.API_URL}/agents/${id}`)
   const json = await res.json()
   return json.agent
 }
