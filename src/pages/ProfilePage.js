@@ -1,9 +1,10 @@
-async function changeProfile (token) {
+async function changeProfile () {
   const username = document.getElementById('username').value
   const password = document.getElementById('password').value
   const res = await fetch(`${window.API_URL}/auth/profile`, {
     method: 'POST',
     headers: {
+      Authorization: `Bearer ${localStorage.getItem('baa_session')}`,
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
@@ -11,8 +12,10 @@ async function changeProfile (token) {
       password
     })
   })
-  if (res.status === 204) {
-    alert('Profile saved successfully')
+  if (res.status === 200) {
+    const json = await res.json()
+    localStorage.setItem('baa_session', json.token)
+    location.reload()
   } else {
     const json = await res.json()
     alert(json.error)
@@ -22,7 +25,7 @@ async function changeProfile (token) {
 document.addEventListener('DOMContentLoaded', () => {
   const token = window.decodeJWT(localStorage.getItem('baa_session'))
   document.getElementById('username').value = token.username
-  document.getElementById('saveChanges').addEventListener('click', async () => {
-    await changeProfile(token)
-  })
+  document
+    .getElementById('saveChanges')
+    .addEventListener('click', changeProfile)
 })

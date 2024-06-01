@@ -11,7 +11,7 @@ function editEntry (file, id, updatedEntry) {
   const index = data.findIndex(entry => entry.id === id)
   if (index !== -1) {
     data[index] = { ...data[index], ...updatedEntry }
-    writeJsonFile(data)
+    writeJsonFile(file, data)
   } else {
     throw new Error(`Entry with id ${id} not found`)
   }

@@ -1,5 +1,5 @@
 const { randomUUID } = require('node:crypto')
-const { addEntry } = require('../libs/db.js')
+const { addEntry, editEntry } = require('../libs/db.js')
 const { readJsonFile } = require('../libs/json.js')
 const jwt = require('jsonwebtoken')
 const JWT_SECRET = require('../secret.js')
@@ -65,10 +65,26 @@ function loginUser (req, res, next) {
 
 function updateProfile (req, res, next) {
   try {
+    const user = req.user
     const username = req.body.username
     const password = req.body.password
-    
-    res.sendStatus(201)
+    let updated = { username }
+    if (password && password.length > 0) updated = { ...updated, password }
+    editEntry('users.json', user.id, updated)
+    const token = jwt.sign(
+      {
+        id: user.id,
+        role: user.role,
+        username: username
+      },
+      JWT_SECRET,
+      {
+        expiresIn: '30d'
+      }
+    )
+    res.status(200).json({
+      token
+    })
   } catch (error) {
     console.log(error)
     next(error)
