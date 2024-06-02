@@ -16,6 +16,7 @@ window.deleteAgent = async id => {
   if (res.status !== 204) {
     return alert('Algo ha fallado intentando borrar el agente')
   }
+  location.reload()
 }
 
 window.toggleLike = async id => {
@@ -32,6 +33,7 @@ window.toggleLike = async id => {
   if (res.status !== 204) {
     return alert('Algo ha ido mal con los likes')
   }
+  location.reload()
 }
 
 function addAgent (token, agent) {

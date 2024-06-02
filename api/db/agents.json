@@ -1,9 +1,7 @@
 [
   {
     "id": "6a9ef7e8-4595-43de-991f-dc7fe909d728",
-    "likedBy": [
-      "4f35ef14-fd5a-4ab9-8da0-fea4dc2be2e0"
-    ],
+    "likedBy": [],
     "type": "centinela",
     "name": "Chamber",
     "photo": "/images/chamber-photo.webp",
@@ -63,7 +61,9 @@
   },
   {
     "id": "f8b9df69-c3ea-4e8f-a6f5-83cfcf2d1bfa",
-    "likedBy": [],
+    "likedBy": [
+      "0bf05215-eafb-4840-807a-ef4ce46113dd"
+    ],
     "type": "centinela",
     "name": "Deadlock",
     "photo": "/images/deadlock-photo.webp",
@@ -527,9 +527,7 @@
   },
   {
     "id": "8fcb87a7-5193-4e58-a7b8-ea96c8d6b315",
-    "likedBy": [
-      "4f35ef14-fd5a-4ab9-8da0-fea4dc2be2e0"
-    ],
+    "likedBy": [],
     "type": "iniciador",
     "name": "Fade",
     "photo": "/images/fade-photo.webp",

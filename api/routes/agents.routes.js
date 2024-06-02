@@ -1,13 +1,13 @@
 const { Router } = require('express')
 const multer = require('multer')
-const { join } = require('path')
+const { join, extname } = require('path')
 const Controller = require('../controllers/agents.controller.js')
 const checkToken = require('../middlewares/checkToken.js')
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     let uploadPath = ''
-    if (path.extname(file.originalname) === '.mp4') {
+    if (extname(file.originalname) === '.mp4') {
       uploadPath = join(__dirname, '..', 'videos')
     } else {
       uploadPath = join(__dirname, '..', 'images')
@@ -15,14 +15,14 @@ const storage = multer.diskStorage({
     cb(null, uploadPath)
   },
   filename: function (req, file, cb) {
-    cb(
-      null,
-      file.fieldname + '-' + Date.now() + path.extname(file.originalname)
-    )
+    cb(null, file.fieldname + '-' + Date.now() + extname(file.originalname))
   }
 })
 
-const upload = multer({ storage: storage })
+const upload = multer({
+  storage: storage,
+  limits: { fileSize: 50 * 1024 * 1024 } // Set file size limit (e.g., 50MB)
+})
 
 const router = Router()
 

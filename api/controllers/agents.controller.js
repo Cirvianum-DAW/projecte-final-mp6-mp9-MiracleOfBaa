@@ -1,4 +1,6 @@
 const { readJsonFile } = require('../libs/json.js')
+const { addEntry } = require('../libs/db.js')
+const { randomUUID } = require('node:crypto')
 const jwt = require('jsonwebtoken')
 const JWT_SECRET = require('../secret.js')
 const {
@@ -45,10 +47,38 @@ function createAgent (req, res, next) {
   try {
     const formData = req.body
     const files = req.files
-    console.log('Form Data:', formData)
-    console.log('Files:', files)
-    res.sendStatus(200)
+    addEntry('agents.json', {
+      id: randomUUID(),
+      likedBy: [],
+      type: formData.type,
+      name: formData.name,
+      photo: `/images/${files.photo[0].filename}`,
+      wallpaper: `/images/${files.wallpaper[0].filename}`,
+      description: formData.description,
+      q: {
+        header: formData.q_header,
+        body: formData.q_body,
+        video: `/videos/${files.q_video[0].filename}`
+      },
+      e: {
+        header: formData.e_header,
+        body: formData.e_body,
+        video: `/videos/${files.e_video[0].filename}`
+      },
+      c: {
+        header: formData.c_header,
+        body: formData.c_body,
+        video: `/videos/${files.c_video[0].filename}`
+      },
+      x: {
+        header: formData.x_header,
+        body: formData.x_body,
+        video: `/videos/${files.x_video[0].filename}`
+      }
+    })
+    res.sendStatus(201)
   } catch (error) {
+    console.log(error)
     next(error)
   }
 }
