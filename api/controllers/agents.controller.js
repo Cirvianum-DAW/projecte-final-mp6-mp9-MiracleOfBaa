@@ -43,11 +43,11 @@ function fetchAgent (req, res, next) {
 
 function createAgent (req, res, next) {
   try {
-    const id = req.params.id
-    const agents = readJsonFile('agents.json')
-    res.status(200).json({
-      agent: agents.filter(agent => agent.id === id)[0]
-    })
+    const formData = req.body
+    const files = req.files
+    console.log('Form Data:', formData)
+    console.log('Files:', files)
+    res.sendStatus(200)
   } catch (error) {
     next(error)
   }
