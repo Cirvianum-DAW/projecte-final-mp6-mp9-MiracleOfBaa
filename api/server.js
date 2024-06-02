@@ -16,16 +16,21 @@ app.use(express.json())
 app.use(cors())
 
 // Rutas
-app.use('/auth', authRoutes)
-app.use('/agents', agentsRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/agents', agentsRoutes)
 
 // Public
+app.use('/', express.static(join(__dirname, 'public')))
 app.use('/images', express.static(join(__dirname, 'images')))
 app.use('/videos', express.static(join(__dirname, 'videos')))
 
 app.use((error, _req, res, _next) => {
   console.log(_next)
   res.status(500).send(error.message)
+})
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
 module.exports = app

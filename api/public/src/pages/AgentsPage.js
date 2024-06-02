@@ -40,8 +40,7 @@ function addAgent (token, agent) {
     'w-1/5 transition duration-300 ease-in-out transform hover:scale-105'
   div.innerHTML = `
         <div class="form bg-gray-800 rounded-lg overflow-hidden shadow-md flex flex-col p-3">
-            <img src="${window.API_URL +
-              agent.photo}" alt="${agent.name}" class="w-full h-48 object-contain">
+            <img src="${agent.photo}" alt="${agent.name}" class="w-full h-48 object-contain">
             <div class="p-4">
                 <h3 class="text-white text-lg font-semibold">${agent.name}
                   ${token

@@ -1,5 +1,5 @@
 // window.API_URL = 'http://localhost:3000'
-window.API_URL = 'https://4dmv3bhs-3000.uks1.devtunnels.ms'
+window.API_URL = '/api'
 
 window.decodeJWT = token => {
   const payload = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')
