@@ -43,6 +43,8 @@ router.post(
   Controller.createAgent
 )
 
+router.put('/', Controller.updateAgent)
+
 router.post('/like', checkToken, Controller.toggleLike)
 
 router.delete('/:id', Controller.deleteAgent)

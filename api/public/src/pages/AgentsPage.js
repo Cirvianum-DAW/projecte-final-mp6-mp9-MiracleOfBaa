@@ -57,10 +57,10 @@ function addAgent (token, agent) {
             ${token && token.role === 'admin'
               ? `
               <div class="flex justify-between p-4">
-                  <button class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300 ease-in-out">
+                  <a href="/pages/AgentEdit.html?id=${agent.id}" class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300 ease-in-out">
                     <i class="fa fa-pencil mr-1"></i>
                     Edit
-                  </button>
+                  </a>
                   <button onclick="window.deleteAgent('${agent.id}')" class="ml-3 bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out">
                     <i class="fa fa-trash mr-1"></i>
                     Delete

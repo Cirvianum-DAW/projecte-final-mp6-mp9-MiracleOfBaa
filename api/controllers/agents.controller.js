@@ -1,5 +1,5 @@
 const { readJsonFile } = require('../libs/json.js')
-const { addEntry } = require('../libs/db.js')
+const { addEntry, editEntry } = require('../libs/db.js')
 const { randomUUID } = require('node:crypto')
 const jwt = require('jsonwebtoken')
 const JWT_SECRET = require('../secret.js')
@@ -83,6 +83,21 @@ function createAgent (req, res, next) {
   }
 }
 
+function updateAgent (req, res, next) {
+  try {
+    const formData = req.body
+    editEntry('agents.json', formData.agentId, {
+      type: formData.type,
+      name: formData.name,
+      description: formData.description
+    })
+    res.sendStatus(204)
+  } catch (error) {
+    console.log(error)
+    next(error)
+  }
+}
+
 function toggleLike (req, res, next) {
   try {
     const userId = req.user.id
@@ -117,6 +132,7 @@ module.exports = {
   fetchAgents,
   fetchAgent,
   createAgent,
+  updateAgent,
   toggleLike,
   deleteAgent
 }
