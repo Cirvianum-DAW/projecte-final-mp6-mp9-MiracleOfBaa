@@ -1,4 +1,4 @@
-//window.API_URL = 'http://localhost:3000'
+// window.API_URL = 'http://localhost:3000'
 window.API_URL = 'https://4dmv3bhs-3000.uks1.devtunnels.ms'
 
 window.decodeJWT = token => {
